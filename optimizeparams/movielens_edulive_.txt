@@ -1,0 +1,7 @@
+Iteration No: 1 started. Searching for the next optimal point.
+Iteration No: 1 ended. Search finished for the next optimal point.
+Time taken: 0.2459
+Function value obtained: 2.7345
+Current minimum: 1.0540
+0.9732632620149907 66.17894194714555 3 0 0.0023691428055010867 0.00013900038792651826 0.0005031698211322475 1.6293820428679089 norm
+1.0539514870744473
