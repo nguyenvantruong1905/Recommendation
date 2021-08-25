@@ -11,17 +11,29 @@ __all__ = [
 ]
 
 def _tu_and_edulive_time(X,X_test,alpha,beta):
-    X['tu'] = X.groupby(["u_id"])["timestamps"].transform('mean')
-    X_test = pd.merge(X_test,X.groupby("u_id").mean["timestamps"], on= "u_id", how="left")
-    X['edulive_time']=alpha*(np.log(1+np.abs((X["timestamps"]-X["tu"]).astype('timedelta64[D]'))**beta))
-    X_test['edulive_time']=alpha*(np.log(1+np.abs((X_test["timestamps_x"]-X_test["timestamps_y"]).astype('timedelta64[D]'))**beta))
-    # X.timestamps = pd.to_datetime(X.timestamps).values.astype(np.int64)
-    # df = pd.to_datetime(X.groupby('u_id').mean().timestamps)
-    # X= pd.merge(X,df, on= ["u_id"])
-    # X.columns=["u_id","i_id","rating","t","time_exam", "action_exam","tu"]
-    # X["t"] = pd.to_datetime(X['t'])
-    # X['edulive_time']=alpha*(np.log(1+np.abs((X["t"]-X["tu"]).astype('timedelta64[D]'))**beta))
-    # X.fillna(-1, inplace=True)
+    # X["timestamps"] = pd.to_datetime(X["timestamps"])
+    # print(X)
+    # a = X.groupby('u_id').mean()["timestamps"]
+    # print(a)
+    # X = pd.merge(X,pd.DataFrame(X.groupby('u_id').mean()["timestamps"]), on= "u_id", how="left")
+    # print((X["timestamps_x"]-X["timestamps_y"]).astype('timedelta64[D]'))
+    # X_test = pd.merge(X_test,pd.DataFrame(X.groupby('u_id').mean()["timestamps"]), on= "u_id", how="left")
+    # X['edulive_time']=alpha*(np.log(1+np.abs((X["timestamps_x"]-X["timestamps_y"]).astype('timedelta64[D]'))**beta))
+    # X_test['edulive_time']=alpha*(np.log(1+np.abs((X_test["timestamps_x"]-X_test["timestamps_y"]).astype('timedelta64[D]'))**beta))
+    # X_test.fillna(0,inplace=True)
+    X["timestamps"] = pd.to_datetime(X["timestamps"]).values.astype(np.int64)
+    df = pd.to_datetime(X.groupby('u_id').mean()["timestamps"])
+    X = pd.merge(X,df, on= ["u_id"],how="left")
+    X.columns=["u_id","i_id","rating","t","time_exam", "action_exam","tu"]
+    X["t"] = pd.to_datetime(X['t'])
+    X['edulive_time']=alpha*(np.log(1+np.abs((X["t"]-X["tu"]).astype('timedelta64[D]'))**beta))
+    X_test["timestamps"] = pd.to_datetime(X_test["timestamps"]).values.astype(np.int64)
+    X_test = pd.merge(X_test,df, on= ["u_id"],how="left")
+    X_test.columns=["u_id","i_id","rating","t","time_exam", "action_exam","tu"]
+    X_test["t"] = pd.to_datetime(X['t'])
+    X_test['edulive_time']=alpha*(np.log(1+np.abs((X["t"]-X["tu"]).astype('timedelta64[D]'))**beta))
+    X.fillna(0, inplace=True)
+
     return X[["u_id","i_id","rating","time_exam", "action_exam","edulive_time"]].values,X[["u_id","i_id","rating","time_exam", "action_exam","edulive_time"]].values,X["tu"].to_list()
 
 def _initialization(n_users, n_items, n_features, rand_type, deviation):

@@ -71,12 +71,11 @@ if __name__ == "__main__":
                 Real(1e-5, 1e-2, "uniform", name="lambda2"),
                 Real(1e-5, 1e-2, "uniform", name="alpha"),
                 Real(1e-3, 1e1, "uniform", name="beta"),
-                Categorical(["norm", "sqrt", "nomod","log"], name='mod'),
             ]
 
             @use_named_args(space_SVD_Edulive)
-            def f_SVD_Edulive(reg, pen, n_features, rand_type,lambda1, lambda2, alpha, beta, mod):
-                print(reg, pen, n_features, rand_type,lambda1, lambda2, alpha, beta, mod)
+            def f_SVD_Edulive(reg, pen, n_features, rand_type,lambda1, lambda2, alpha, beta):
+                print(reg, pen, n_features, rand_type,lambda1, lambda2, alpha, beta)
                 try:
                     res_ = load(path + filename_pkl)
                     min_rmse = res_.fun
@@ -105,17 +104,18 @@ if __name__ == "__main__":
 
                 return a
         ##############################################################
-            num_epochs = 3
+            num_epochs = 2
+            mod = "nomod"  # "norm", "sqrt", "nomod"
             lr = 1e-3
             dataset = "movielens"
             prefix = dataset + "_" + "edulive"
 
             ##############################################################
 
-            filename_txt = prefix + "_"  + ".txt"
-            filename_pkl = prefix + "_" + ".pkl"
-            filename_params = prefix + "_" + "params"
-            filename_hyperparams = prefix + "_" + "hyperparams"
+            filename_txt = prefix + "_" +mod +"_"+ ".txt"
+            filename_pkl = prefix + "_"+mod +"_"+ ".pkl"
+            filename_params = prefix + "_" +mod+"_"+ "params"
+            filename_hyperparams = prefix + "_" +mod+"_"+ "hyperparams"
             path = r"C:/Users/nvtru/Desktop/auto-recommender/optimizeparams/"
             path_resuld = r"C:/Users/nvtru/Desktop/auto-recommender/resuld/"
             # path = "/tmp/"
@@ -165,8 +165,8 @@ if __name__ == "__main__":
                 'lambda2':res.x[5], 
                 'alpha':res.x[6], 
                 'beta':res.x[7], 
-                'mod':res.x[8],
-                "lr": lr
+                "lr": lr,
+                "mod":mod   
                 
             }
             print(data_hyperparam)
