@@ -130,7 +130,7 @@ class SVD_Edulive:
         X.fillna(-1, inplace=True)
         X["u_id"] = X["u_id"].astype(np.int32)
         X["i_id"] = X["i_id"].astype(np.int32)  
-        X['timestamps'] =pd.to_datetime(X['timestamps']).values.astype(np.int64)
+        X['timestamps'] =pd.to_datetime(X['timestamps'])
         return X
 
     def _init_metrics(self):

@@ -7,7 +7,7 @@ from datetime import datetime
 
 
 max_rating = 5
-params = open(r"/home/truong/auto-recommender/movielens_edulive_nomod_params",'rb')
+params = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_nomod_params",'rb')
 hyperparams = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_nomod_hyperparams",'rb')
 user_item_map = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_nomod_params_user_item_map",'rb')
 
@@ -91,7 +91,7 @@ def update_param(pu, qi, pu_a,qi_a, user, item, rating,time_exam_mean,action_exa
         "action_exam_mean_":action_exam_mean,
         "tu": tu
     }
-    dbfile = open(r"/home/truong/auto-recommender/movielens_edulive_nomod_params",'wb')
+    dbfile = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_nomod_params",'wb')
     pickle.dump(data, dbfile)
 
     return pu , qi , pu_a, qi_a, global_mean_,std_, time_exam_mean,action_exam_mean,tu
