@@ -35,8 +35,8 @@ if __name__ == "__main__":
     #                 names=["u_id", "i_id", "rating", "timestamps"])
     try :
         while True:
-            path_file_train = (r"C:\Users\nvtru\Desktop\auto-recommender\movieslen_data\train.txt")
-            path_file_test = (r"C:\Users\nvtru\Desktop\auto-recommender\movieslen_data\test1.txt")
+            path_file_train = (r"/home/auto-recommender/movieslen_data/train.txt")
+            path_file_test = (r"/home/auto-recommender/movieslen_data/test1.txt")
             train = pd.read_csv(path_file_train, sep=",",
                             names=["u_id", "i_id", "rating", "timestamps"])
             test = pd.read_csv(path_file_test, sep=",",
@@ -116,8 +116,8 @@ if __name__ == "__main__":
             filename_pkl = prefix + "_"+mod +"_"+ ".pkl"
             filename_params = prefix + "_" +mod+"_"+ "params"
             filename_hyperparams = prefix + "_" +mod+"_"+ "hyperparams"
-            path = r"C:/Users/nvtru/Desktop/auto-recommender/optimizeparams/"
-            path_resuld = r"C:/Users/nvtru/Desktop/auto-recommender/resuld/"
+            path = r"/home/auto-recommender/optimizeparams/"
+            path_resuld = r"/home/auto-recommender/resuld/"
             # path = "/tmp/"
             sys.stdout = open(path + filename_txt, "w")
             sys.stderr = sys.stdout

@@ -4,8 +4,8 @@ import pandas as pd
 import numpy as np 
 
 ###########################################################################################
-path_file_train = (r"C:\Users\nvtru\ai-machine\movieslen_data\train.txt")
-path_file_test = (r"C:\Users\nvtru\ai-machine\movieslen_data\test1.txt")
+path_file_train = (r"/home/auto-recommender/movieslen_data/train.txt")
+path_file_test = (r"/home/auto-recommender/movieslen_data/test1.txt")
 train = pd.read_csv(path_file_train, sep=",",
                    names=["u_id", "i_id", "rating", "timestamps"])
 test = pd.read_csv(path_file_test, sep=",",
