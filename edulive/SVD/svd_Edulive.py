@@ -138,8 +138,7 @@ class SVD_Edulive:
         self.metrics_ = pd.DataFrame(metrics, columns=["Loss", "RMSE", "MAE"])
 
     def _run_sgd(self, X, X_test):
-        X,self.tu_ = _tu_and_edulive_time(X,self.alpha,self.beta)
-        X_test,_ = _tu_and_edulive_time(X_test,self.alpha,self.beta)
+        X,X_test,self.tu_ = _tu_and_edulive_time(X,X_test,self.alpha,self.beta)
         n_users = len(np.unique(X[:, 0]))
         n_items = len(np.unique(X[:, 1]))
 
