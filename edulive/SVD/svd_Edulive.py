@@ -27,8 +27,6 @@ class SVD_Edulive:
         deviation=0.1,
         filename="",
         storefile=False,
-        mod="sqrt",
-        std_= 0,
         min_rmse=10000.0,
         lambda1 = 0.001,
         lambda2 = 0.001,
@@ -45,13 +43,11 @@ class SVD_Edulive:
         self.deviation = deviation
         self.filename = filename
         self.storefile = storefile
-        self.mod = mod
         self.min_rmse = min_rmse
         self.lambda1 = lambda1
         self.lambda2 = lambda2
         self.beta = beta
         self.alpha = alpha
-        self.std_ = std_
 
     @_timer(text="\nDone ")
     def fit(self, X, X_test=None):
@@ -73,17 +69,8 @@ class SVD_Edulive:
         if X_test is not None:
             X_test = self._preprocess_data(X_test, train=False, verbose=False)
             self._init_metrics()
-        if self.mod == "sqrt":
-            self.global_mean_ = np.mean(np.sqrt(X["rating"].values))
-            self.std_ = 0
-        elif self.mod == "norm":
-            self.global_mean_ = np.mean(X["rating"].values)
-            self.std_ = np.std(X["rating"])
-        elif self.mod == "log":
-            self.global_mean_ = np.mean(np.log(1+X["rating"].values))
-        else:
-            self.global_mean_ = np.mean(X["rating"].values)
-            self.std_ = 0
+        self.global_mean_ = np.mean(X["rating"].values)
+
         self.time_exam_ = np.mean(X["time_exam"].values)
         self.action_exam_ = np.mean(X["action_exam"].values)
         rmse = self._run_sgd(X, X_test)
@@ -163,8 +150,6 @@ class SVD_Edulive:
                 pen=self.pen,
                 lr=self.lr,
                 reg=self.reg,
-                mod=self.mod,
-                std_=self.std_,
                 lambda1= self.lambda1,
                 lambda2= self.lambda2)
 
@@ -175,15 +160,13 @@ class SVD_Edulive:
                 pu_a=pu_a,
                 qi_a=qi_a,
                 global_mean_=self.global_mean_,
-                mod=self.mod,
-                std_=self.std_,
                 lambda1= self.lambda1,
                 lambda2= self.lambda2
             )
 
 
             val_rmse = self.metrics_.loc[epoch_ix, "RMSE"]
-            if val_rmse < rmse - 1e-4:
+            if val_rmse < rmse - 1e-5:
                 count = 0
                 count_lr = 0
                 rmse = val_rmse
@@ -197,7 +180,6 @@ class SVD_Edulive:
                         "pu_a":pu_a,
                         "qi_a":qi_a,
                         "global_mean_": self.global_mean_,
-                        "std_":self.std_,
                         "time_exam_mean_":self.time_exam_,
                         "action_exam_mean_":self.action_exam_,
                         "tu": self.tu_
@@ -205,7 +187,7 @@ class SVD_Edulive:
             else:
                 count += 1
                 count_lr += 1
-            if (count_lr >= 5) and (self.lr > 1e-5):
+            if (count_lr >= 5) and (self.lr > 1e-6):
                 self.lr = self.lr / 10
                 count_lr = 0
             if count >= 9:

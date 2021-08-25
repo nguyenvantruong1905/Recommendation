@@ -37,6 +37,8 @@ if __name__ == "__main__":
         while True:
             path_file_train = (r"/home/truong/auto-recommender/movieslen_data/train.txt")
             path_file_test = (r"/home/truong/auto-recommender/movieslen_data/test1.txt")
+            # path_file_train = (r"C:\Users\nvtru\Desktop\auto-recommender\movieslen_data\train.txt")
+            # path_file_test = (r"C:\Users\nvtru\Desktop\auto-recommender\movieslen_data\test1.txt")
             train = pd.read_csv(path_file_train, sep=",",
                             names=["u_id", "i_id", "rating", "timestamps"])
             test = pd.read_csv(path_file_test, sep=",",
@@ -93,9 +95,7 @@ if __name__ == "__main__":
                     lambda2= lambda2,
                     rand_type=rand_type,
                     deviation=0.1,
-                    std_= 0.0,
                     n_epochs=num_epochs,
-                    mod = mod,
                     storefile=True,
                     filename=path + filename_params,
                     min_rmse=min_rmse,
@@ -105,19 +105,20 @@ if __name__ == "__main__":
                 return a
         ##############################################################
             num_epochs = 2
-            mod = "nomod"  # "norm", "sqrt", "nomod"
             lr = 1e-3
             dataset = "movielens"
             prefix = dataset + "_" + "edulive"
 
             ##############################################################
 
-            filename_txt = prefix + "_" +mod +"_"+ ".txt"
-            filename_pkl = prefix + "_"+mod +"_"+ ".pkl"
-            filename_params = prefix + "_" +mod+"_"+ "params"
-            filename_hyperparams = prefix + "_" +mod+"_"+ "hyperparams"
-            path = r"/home/truong/auto-recommender/optimizeparams/"
-            path_resuld = r"/home/truong/auto-recommender/resuld/"
+            filename_txt = prefix + "_" + ".txt"
+            filename_pkl = prefix + "_"+ ".pkl"
+            filename_params = prefix + "_" + "params"
+            filename_hyperparams = prefix + "_" + "hyperparams"
+            # path = r"/home/truong/auto-recommender/optimizeparams/"
+            # path_resuld = r"/home/truong/auto-recommender/resuld/"
+            path = r"C:/Users/nvtru/Desktop/auto-recommender/optimizeparams/"
+            path_resuld = r"C:/Users/nvtru/Desktop/auto-recommender/resuld/"
             # path = "/tmp/"
             sys.stdout = open(path + filename_txt, "w")
             sys.stderr = sys.stdout
@@ -166,7 +167,6 @@ if __name__ == "__main__":
                 'alpha':res.x[6], 
                 'beta':res.x[7], 
                 "lr": lr,
-                "mod":mod   
                 
             }
             print(data_hyperparam)

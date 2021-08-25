@@ -7,9 +7,12 @@ from datetime import datetime
 
 
 max_rating = 5
-params = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_nomod_params",'rb')
-hyperparams = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_nomod_hyperparams",'rb')
-user_item_map = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_nomod_params_user_item_map",'rb')
+params = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_params",'rb')
+hyperparams = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_hyperparams",'rb')
+user_item_map = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_params_user_item_map",'rb')
+# params = open(r"C:\Users\nvtru\Desktop\auto-recommender\resuld\movielens_edulive_params",'rb')
+# hyperparams = open(r"C:\Users\nvtru\Desktop\auto-recommender\resuld\movielens_edulive_hyperparams",'rb')
+# user_item_map = open(r"C:\Users\nvtru\Desktop\auto-recommender\resuld\movielens_edulive_params_user_item_map",'rb')
 
 params = pickle.load(params)
 user_item_map = pickle.load(user_item_map)
@@ -27,7 +30,6 @@ pu_a = params["pu_a"]
 qi_a = params["qi_a"]
 tu = params["tu"]
 global_mean = params["global_mean_"]
-std = params["std_"]
 time_exam_mean = params["time_exam_mean_"]
 action_exam_mean_=params["action_exam_mean_"]
 tu = params["tu"]
@@ -41,7 +43,6 @@ reg = hyperparams["reg"]
 pen = hyperparams["pen"]
 rand_type = hyperparams["rand_type"]
 lr = hyperparams["lr"]
-mod=hyperparams["mod"]
 n_features = hyperparams["n_features"]
 #################################################
 user_map = user_item_map['user_map']
@@ -49,7 +50,7 @@ item_map = user_item_map['item_map']
 
 
 
-def update_param(pu, qi, pu_a,qi_a, user, item, rating,time_exam_mean,action_exam_mean, timestamps,time_exam,action_exam,tu,global_mean_,lambda1,lambda2, alpha,beta, mod, lr , reg, pen, std_ ):
+def update_param(pu, qi, pu_a,qi_a, user, item, rating,time_exam_mean,action_exam_mean, timestamps,time_exam,action_exam,tu,global_mean_,lambda1,lambda2, alpha,beta, lr , reg, pen, ):
     # print(user_map)
     pred = (
             global_mean_
@@ -59,14 +60,7 @@ def update_param(pu, qi, pu_a,qi_a, user, item, rating,time_exam_mean,action_exa
             - lambda1*time_exam
             - lambda2*action_exam
     )
-    if mod == "sqrt":
-        err = np.sqrt(rating) - pred
-    elif mod == "norm":
-        err = (rating - global_mean_) / std_ - pred
-    elif mod == "log":
-        err = np.log(1+rating) - pred
-    else:
-        err = rating - pred
+    err = rating - pred
     pu_a += lr * (
         err * (qi[item])
         - reg * pu_a
@@ -86,15 +80,15 @@ def update_param(pu, qi, pu_a,qi_a, user, item, rating,time_exam_mean,action_exa
         "pu_a":pu_a,
         "qi_a":qi_a,
         "global_mean_": global_mean_,
-        "std_":std_,
         "time_exam_mean_":time_exam_mean,
         "action_exam_mean_":action_exam_mean,
         "tu": tu
     }
-    dbfile = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_nomod_params",'wb')
+    dbfile = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_params",'wb')
+    # dbfile = open(r"C:\Users\nvtru\Desktop\auto-recommender\resuld\movielens_edulive_params",'wb')
     pickle.dump(data, dbfile)
 
-    return pu , qi , pu_a, qi_a, global_mean_,std_, time_exam_mean,action_exam_mean,tu
+    return pu , qi , pu_a, qi_a, global_mean_, time_exam_mean,action_exam_mean,tu
     
 def time_edulive(timestamps, tu,alpha,beta):
     ts = abs(timestamps - tu)
@@ -107,7 +101,7 @@ def time_days(tu):
     ts = abs(dt64 - tu)
     return(ts.days)#astype('timedelta64[D]')/ np.timedelta64(1, 'D'))
 
-def predict(user, pu, qi, pu_a, qi_a,time_exam_mean,tu, action_exam_mean, global_mean, lambda1, lambda2, alpha,mod, beta , std, recommend = None):
+def predict(user, pu, qi, pu_a, qi_a,time_exam_mean,tu, action_exam_mean, global_mean, lambda1, lambda2, alpha,beta ):
     # user = user_map[1604]
     arr =[]
     max_rating = 5
@@ -120,14 +114,7 @@ def predict(user, pu, qi, pu_a, qi_a,time_exam_mean,tu, action_exam_mean, global
         - lambda1*time_exam_mean
         - lambda2*action_exam_mean
     )
-        if mod == "sqrt":
-            arr.append(pred * pred)
-        elif mod == "norm":
-            arr.append((pred * std + global_mean))
-        elif mod == "log":
-            arr.append((np.exp(pred) - 1))
-        else:
-            arr.append(pred)
+        arr.append(pred)
     arr_higher = np.array(arr)
     arr_improve = max_rating-arr_higher
     arr_map = np.argsort(arr_higher)
@@ -163,7 +150,7 @@ if i_id not in item_map:
 
 user = user_map[u_id]
 item = item_map[i_id]
-pu , qi , pu_a, qi_a, global_mean,std, time_exam_mean,action_exam_mean,tu =update_param( pu = pu,user=user, item=item,
+pu , qi , pu_a, qi_a, global_mean,time_exam_mean,action_exam_mean,tu =update_param( pu = pu,user=user, item=item,
               qi = qi,
               qi_a=qi_a,
               pu_a=pu_a,
@@ -179,11 +166,9 @@ pu , qi , pu_a, qi_a, global_mean,std, time_exam_mean,action_exam_mean,tu =updat
               lambda2= lambda2,
               alpha= alpha,
               beta=beta,
-              mod=mod,
               lr=lr,
               reg= reg,
               pen=pen,
-              std_ = std,
               )
 print(predict(user=user,
               pu = pu,
@@ -198,8 +183,5 @@ print(predict(user=user,
               lambda2= lambda2,
               alpha= alpha,
               beta=beta,
-              mod=mod,
-              std= std,
-              recommend="higher"
 
 ))

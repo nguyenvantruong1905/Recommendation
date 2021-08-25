@@ -1,0 +1,124 @@
+Iteration No: 1 started. Evaluating function at random point.
+0.02524307394830816 26.81893973469371 3 0 0.009537303730116574 0.007323974694200799 0.0011442056799633256 6.448211901188953
+100000.0
+Epoch 1/2: val_loss: 1.29896 - val_rmse: 1.13972 - val_mae: 1.13972 - took 0.2 sec
+Epoch 2/2: val_loss: 1.20526 - val_rmse: 1.09784 - val_mae: 1.09784 - took 0.2 sec
+1.0978432124522302
+
+Done 0:00:02.328197
+Iteration No: 1 ended. Evaluation done at random point.
+Time taken: 2.3594
+Function value obtained: 1.0978
+Current minimum: 1.0978
+Iteration No: 2 started. Evaluating function at random point.
+0.4974227841628042 6.303454858837285 3 1 0.0036244373537934055 0.007927759865826693 1.3179162534320906e-05 1.0494804983164936
+1.0978432124522302
+Epoch 1/2: val_loss: 1.22704 - val_rmse: 1.10772 - val_mae: 1.10772 - took 0.3 sec
+Epoch 2/2: val_loss: 1.1589 - val_rmse: 1.07652 - val_mae: 1.07652 - took 0.4 sec
+1.0765239747890651
+
+Done 0:00:02.528312
+Iteration No: 2 ended. Evaluation done at random point.
+Time taken: 2.5912
+Function value obtained: 1.0765
+Current minimum: 1.0765
+Iteration No: 3 started. Evaluating function at random point.
+0.11816089266286704 13.344608023730169 3 0 0.003758944674430716 0.001075965265125295 0.0011117509385204377 2.4200097976886434
+1.0765239747890651
+Epoch 1/2: val_loss: 1.22237 - val_rmse: 1.10561 - val_mae: 1.10561 - took 0.2 sec
+Epoch 2/2: val_loss: 1.16235 - val_rmse: 1.07812 - val_mae: 1.07812 - took 0.2 sec
+1.078123903885388
+
+Done 0:00:01.547898
+Iteration No: 3 ended. Evaluation done at random point.
+Time taken: 1.6047
+Function value obtained: 1.0781
+Current minimum: 1.0765
+Iteration No: 4 started. Evaluating function at random point.
+0.3039226564754482 31.67681126955659 3 1 0.0010331699584400136 0.002185327134143591 0.00918566765484487 0.9523699634664167
+1.0765239747890651
+Epoch 1/2: val_loss: 1.17897 - val_rmse: 1.0858 - val_mae: 1.0858 - took 0.2 sec
+Epoch 2/2: val_loss: 1.12518 - val_rmse: 1.06074 - val_mae: 1.06074 - took 0.2 sec
+1.0607449115829588
+
+Done 0:00:02.009659
+Iteration No: 4 ended. Evaluation done at random point.
+Time taken: 2.0705
+Function value obtained: 1.0607
+Current minimum: 1.0607
+Iteration No: 5 started. Evaluating function at random point.
+0.4607880628152254 97.61884542976972 3 0 0.00665351538256807 0.002466649603426704 0.0056151203072435625 7.250428784841681
+1.0607449115829588
+Epoch 1/2: val_loss: 1.23968 - val_rmse: 1.11341 - val_mae: 1.11341 - took 0.2 sec
+Epoch 2/2: val_loss: 1.17566 - val_rmse: 1.08428 - val_mae: 1.08428 - took 0.2 sec
+1.0842774913673114
+
+Done 0:00:01.493693
+Iteration No: 5 ended. Evaluation done at random point.
+Time taken: 1.6000
+Function value obtained: 1.0843
+Current minimum: 1.0607
+Iteration No: 6 started. Evaluating function at random point.
+0.8858040023716925 41.74435051872366 3 1 0.006276234016540968 0.007577412694577166 0.0029822770845426183 4.423741889904714
+1.0607449115829588
+Epoch 1/2: val_loss: 1.22106 - val_rmse: 1.10501 - val_mae: 1.10501 - took 0.1 sec
+Epoch 2/2: val_loss: 1.15677 - val_rmse: 1.07553 - val_mae: 1.07553 - took 0.2 sec
+1.0755343484784814
+
+Done 0:00:01.462649
+Iteration No: 6 ended. Evaluation done at random point.
+Time taken: 1.5314
+Function value obtained: 1.0755
+Current minimum: 1.0607
+Iteration No: 7 started. Evaluating function at random point.
+0.46769372179729557 5.616654433879934 3 0 0.002218938772876636 0.0008081590642152553 0.006240436983912645 8.352794170346979
+1.0607449115829588
+Epoch 1/2: val_loss: 1.23411 - val_rmse: 1.11091 - val_mae: 1.11091 - took 0.1 sec
+Epoch 2/2: val_loss: 1.17118 - val_rmse: 1.08221 - val_mae: 1.08221 - took 0.2 sec
+1.0822101998400662
+
+Done 0:00:01.125320
+Iteration No: 7 ended. Evaluation done at random point.
+Time taken: 1.1722
+Function value obtained: 1.0822
+Current minimum: 1.0607
+Iteration No: 8 started. Evaluating function at random point.
+0.70001252027023 35.319111872425594 3 0 0.0006747710843400873 0.004305383386555458 0.009460488139570893 4.213776156592374
+1.0607449115829588
+Epoch 1/2: val_loss: 1.29474 - val_rmse: 1.13787 - val_mae: 1.13787 - took 0.2 sec
+Epoch 2/2: val_loss: 1.20429 - val_rmse: 1.0974 - val_mae: 1.0974 - took 0.1 sec
+1.0974027714995536
+
+Done 0:00:00.942877
+Iteration No: 8 ended. Evaluation done at random point.
+Time taken: 0.9907
+Function value obtained: 1.0974
+Current minimum: 1.0607
+Iteration No: 9 started. Evaluating function at random point.
+0.8974506315985903 81.99345205757302 3 0 0.0011128859420173273 0.0032319417697741102 0.002396738926479481 6.340818801759
+1.0607449115829588
+Epoch 1/2: val_loss: 1.21735 - val_rmse: 1.10334 - val_mae: 1.10334 - took 0.1 sec
+Epoch 2/2: val_loss: 1.1584 - val_rmse: 1.07629 - val_mae: 1.07629 - took 0.2 sec
+1.0762877528002563
+
+Done 0:00:01.103674
+Iteration No: 9 ended. Evaluation done at random point.
+Time taken: 1.1565
+Function value obtained: 1.0763
+Current minimum: 1.0607
+Iteration No: 10 started. Evaluating function at random point.
+0.9689375646403264 24.577911292007663 3 1 0.006864474542303767 0.007508443529535527 0.006450220378134605 5.070461537985458
+1.0607449115829588
+Epoch 1/2: val_loss: 1.30866 - val_rmse: 1.14397 - val_mae: 1.14397 - took 0.2 sec
+Epoch 2/2: val_loss: 1.20991 - val_rmse: 1.09996 - val_mae: 1.09996 - took 0.2 sec
+1.0999579435485152
+
+Done 0:00:01.034386
+Iteration No: 10 ended. Evaluation done at random point.
+Time taken: 2.3813
+Function value obtained: 1.1000
+Current minimum: 1.0607
+Iteration No: 11 started. Searching for the next optimal point.
+0.39092698542746845 29.266125631014337 3 1 0.008705490928830589 0.0016824542038976636 0.0002527544787407761 0.4672233081154165
+1.0607449115829588
+Epoch 1/2: 

@@ -41,7 +41,7 @@ def _initialization(n_users, n_items, n_features, rand_type, deviation):
 
 
 @jit
-def _run_epoch(X, pu, qi, pu_a, qi_a, global_mean_, pen, lr, reg, mod, std_,  lambda1 , lambda2):
+def _run_epoch(X, pu, qi, pu_a, qi_a, global_mean_, pen, lr, reg,  lambda1 , lambda2):
 
     """Runs an epoch, updating model weights (pu_a, qi_a, pu, qi).
 
@@ -96,14 +96,7 @@ def _run_epoch(X, pu, qi, pu_a, qi_a, global_mean_, pen, lr, reg, mod, std_,  la
             - lambda1*time_exam
             - lambda2*action
         )
-        if mod == "sqrt":
-            err = np.sqrt(rating) - pred
-        elif mod == "norm":
-            err = (rating - global_mean_) / std_ - pred
-        elif mod == "log":
-            err = np.log(1+rating) - pred
-        else:
-            err = rating - pred
+        err = rating - pred
 
 
         pu_a += lr * (
@@ -123,7 +116,7 @@ def _run_epoch(X, pu, qi, pu_a, qi_a, global_mean_, pen, lr, reg, mod, std_,  la
 
 
 @jit
-def _compute_val_metrics(X, pu, qi, pu_a, qi_a, global_mean_, mod, std_ ,  lambda1 , lambda2):
+def _compute_val_metrics(X, pu, qi, pu_a, qi_a, global_mean_,  lambda1 , lambda2):
     """Compu_ates validation metrics (loss, rmse, and mae).
 
     Parameters
@@ -163,14 +156,8 @@ def _compute_val_metrics(X, pu, qi, pu_a, qi_a, global_mean_, mod, std_ ,  lambd
             - lambda1*time_exam
             - lambda2*action
         )
-        if mod == "sqrt":
-            residuals.append(rating - pred * pred)
-        elif mod == "norm":
-            residuals.append(rating - (pred * std_ + global_mean_))
-        elif mod == "log":
-            residuals.append(rating - (np.exp(pred) - 1))
-        else:
-            residuals.append(rating - pred)
+
+        residuals.append(rating - pred)
     residuals = np.array(residuals)
     loss = np.square(residuals).mean()
     rmse = np.sqrt(loss)
