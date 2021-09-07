@@ -1,35 +1,7 @@
 from SVD import algorithm_svd_andrew
 from SVD import algorithm_svd_koren
 from SVD import algorithm_svd_edulive
-import pandas as pd
-import numpy as np
-import pickle
 
-path_file_train = (r"/home/truonv/Desktop/data/movieslen_data/train.dat")
-path_file_val = (r"/home/truonv/Desktop/data/movieslen_data/test.txt")
-train = pd.read_csv(path_file_train, sep="::",
-                   names=["u_id", "i_id", "rating", "timestamps"])
-val = pd.read_csv(path_file_val, sep="::",
-                   names=["u_id", "i_id", "rating", "timestamps"])
-
-def _preprocess_train(X):
-    user_ids = X["u_id"].unique().tolist()
-    item_ids = X["i_id"].unique().tolist()
-    n_users = len(user_ids)
-    n_items = len(item_ids)
-    user_idx = range(n_users)
-    item_idx = range(n_items)
-    user_mapping_ = dict(zip(user_ids, user_idx))
-    item_mapping_ = dict(zip(item_ids, item_idx))
-    return user_mapping_,item_mapping_
-
-def _preprocess_val(X,user_mapping_,item_mapping_):
-    X["u_id"] = X["u_id"].map(user_mapping_)
-    X["i_id"] = X["i_id"].map(item_mapping_)
-    X.fillna(-1, inplace=True)
-    X["u_id"] = X["u_id"].astype(np.int32)
-    X["i_id"] = X["i_id"].astype(np.int32)
-    return X[["u_id", "i_id", "rating"]].values
 
 user_mapping_,item_mapping_= _preprocess_train(train)
 user_item_rating_from_val_set = _preprocess_val(val,user_mapping_,item_mapping_)

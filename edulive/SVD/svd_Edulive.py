@@ -32,6 +32,7 @@ class SVD_Edulive:
         lambda2 = 0.001,
         alpha = 0.001,
         beta = 0.001,
+        mod = "baseline"
     ):
 
         self.lr = lr
@@ -48,6 +49,7 @@ class SVD_Edulive:
         self.lambda2 = lambda2
         self.beta = beta
         self.alpha = alpha
+        self.mod = mod
 
     @_timer(text="\nDone ")
     def fit(self, X, X_test=None):
@@ -124,7 +126,7 @@ class SVD_Edulive:
         metrics = np.zeros((self.n_epochs, 3), dtype=float)
         self.metrics_ = pd.DataFrame(metrics, columns=["Loss", "RMSE", "MAE"])
 
-    def _run_sgd(self, X, X_test):
+    def _run_sgd(self, X, X_test):         
         X,X_test,self.tu_ = _tu_and_edulive_time(X,X_test,self.alpha,self.beta)
         n_users = len(np.unique(X[:, 0]))
         n_items = len(np.unique(X[:, 1]))
@@ -140,30 +142,78 @@ class SVD_Edulive:
         for epoch_ix in range(self.n_epochs):
             print("Epoch {}/{}".format(epoch_ix + 1, self.n_epochs), end=": ")
             start = process_time()
-            pu, qi, pu_a, qi_a = _run_epoch(
-                X=X,
-                pu=pu,
-                qi=qi,
-                pu_a=pu_a,
-                qi_a=qi_a,
-                global_mean_=self.global_mean_,
-                pen=self.pen,
-                lr=self.lr,
-                reg=self.reg,
-                lambda1= self.lambda1,
-                lambda2= self.lambda2)
+            if self.mod == "baseline":
+                pu, qi, pu_a, qi_a = _run_epoch(
+                    X=X,
+                    pu=pu,
+                    qi=qi,
+                    pu_a=pu_a,
+                    qi_a=qi_a,
+                    global_mean_=self.global_mean_,
+                    pen=self.pen,
+                    lr=self.lr,
+                    reg=self.reg,
+                    lambda1= self.lambda1,
+                    lambda2= self.lambda2)
 
-            self.metrics_.loc[epoch_ix, :] = _compute_val_metrics(
-                X=X_test,
-                pu=pu,
-                qi=qi,
-                pu_a=pu_a,
-                qi_a=qi_a,
-                global_mean_=self.global_mean_,
-                lambda1= self.lambda1,
-                lambda2= self.lambda2
-            )
+                self.metrics_.loc[epoch_ix, :] = _compute_val_metrics(
+                    X=X_test,
+                    pu=pu,
+                    qi=qi,
+                    pu_a=pu_a,
+                    qi_a=qi_a,
+                    global_mean_=self.global_mean_,
+                    lambda1= self.lambda1,
+                    lambda2= self.lambda2
+                )
+            elif self.mod == "baseline_implicit":
+                pu, qi, pu_a, qi_a = _run_epoch(
+                    X=X,
+                    pu=pu,
+                    qi=qi,
+                    pu_a=pu_a,
+                    qi_a=qi_a,
+                    global_mean_=self.global_mean_,
+                    pen=self.pen,
+                    lr=self.lr,
+                    reg=self.reg,
+                    lambda1= self.lambda1,
+                    lambda2= self.lambda2)
 
+                self.metrics_.loc[epoch_ix, :] = _compute_val_metrics(
+                    X=X_test,
+                    pu=pu,
+                    qi=qi,
+                    pu_a=pu_a,
+                    qi_a=qi_a,
+                    global_mean_=self.global_mean_,
+                    lambda1= self.lambda1,
+                    lambda2= self.lambda2
+                )
+            elif self.mod =="baseline_implicit_timedependent":
+                                pu, qi, pu_a, qi_a = _run_epoch(
+                    X=X,
+                    pu=pu,
+                    qi=qi,
+                    pu_a=pu_a,
+                    qi_a=qi_a,
+                    global_mean_=self.global_mean_,
+                    pen=self.pen,
+                    lr=self.lr,
+                    reg=self.reg,
+                    lambda1= self.lambda1,
+                    lambda2= self.lambda2)
+
+                self.metrics_.loc[epoch_ix, :] = _compute_val_metrics(
+                    X=X_test,
+                    pu=pu,
+                    qi=qi,
+                    pu_a=pu_a,
+                    qi_a=qi_a,
+                    global_mean_=self.global_mean_,
+                    lambda1= self.lambda1,
+                    lambda2= self.lambda2
+                    )
 
             val_rmse = self.metrics_.loc[epoch_ix, "RMSE"]
             if val_rmse < rmse - 1e-5:

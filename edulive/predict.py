@@ -7,7 +7,7 @@ from datetime import datetime
 
 
 max_rating = 5
-params = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_params",'rb')
+params = open(r"C:\Users\nvtru\Desktop\auto-recommender\resuld\movielens_edulive_params_user_item_map",'rb')
 hyperparams = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_hyperparams",'rb')
 user_item_map = open(r"/home/truong/auto-recommender/resuld/movielens_edulive_params_user_item_map",'rb')
 # params = open(r"C:\Users\nvtru\Desktop\auto-recommender\resuld\movielens_edulive_params",'rb')

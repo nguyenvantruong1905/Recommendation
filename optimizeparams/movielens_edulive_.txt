@@ -1,124 +1,490 @@
 Iteration No: 1 started. Evaluating function at random point.
-0.02524307394830816 26.81893973469371 3 0 0.009537303730116574 0.007323974694200799 0.0011442056799633256 6.448211901188953
+0.2715754943160591 85.17202052469015 3 0 0.008045621747448866 0.003040332296723316 0.008915116440337718 3.2567284762532727
 100000.0
-Epoch 1/2: val_loss: 1.29896 - val_rmse: 1.13972 - val_mae: 1.13972 - took 0.2 sec
-Epoch 2/2: val_loss: 1.20526 - val_rmse: 1.09784 - val_mae: 1.09784 - took 0.2 sec
-1.0978432124522302
+Epoch 1/3000: val_loss: 1.25069 - val_rmse: 1.11834 - val_mae: 1.11834 - took 2.7 sec
+Epoch 2/3000: val_loss: 1.18423 - val_rmse: 1.08823 - val_mae: 1.08823 - took 0.1 sec
+Epoch 3/3000: val_loss: 1.13673 - val_rmse: 1.06618 - val_mae: 1.06618 - took 0.1 sec
+Epoch 4/3000: val_loss: 1.10124 - val_rmse: 1.0494 - val_mae: 1.0494 - took 0.1 sec
+Epoch 5/3000: val_loss: 1.07374 - val_rmse: 1.03622 - val_mae: 1.03622 - took 0.2 sec
+Epoch 6/3000: val_loss: 1.05179 - val_rmse: 1.02557 - val_mae: 1.02557 - took 0.1 sec
+Epoch 7/3000: val_loss: 1.03386 - val_rmse: 1.01679 - val_mae: 1.01679 - took 0.1 sec
+Epoch 8/3000: val_loss: 1.01894 - val_rmse: 1.00943 - val_mae: 1.00943 - took 0.1 sec
+Epoch 9/3000: val_loss: 1.00634 - val_rmse: 1.00316 - val_mae: 1.00316 - took 0.1 sec
+Epoch 10/3000: val_loss: 0.99555 - val_rmse: 0.99777 - val_mae: 0.99777 - took 0.1 sec
+Epoch 11/3000: val_loss: 0.98623 - val_rmse: 0.99309 - val_mae: 0.99309 - took 0.1 sec
+Epoch 12/3000: val_loss: 0.9781 - val_rmse: 0.98899 - val_mae: 0.98899 - took 0.1 sec
+Epoch 13/3000: val_loss: 0.97094 - val_rmse: 0.98537 - val_mae: 0.98537 - took 0.1 sec
+Epoch 14/3000: val_loss: 0.96461 - val_rmse: 0.98215 - val_mae: 0.98215 - took 0.1 sec
+Epoch 15/3000: val_loss: 0.95898 - val_rmse: 0.97927 - val_mae: 0.97927 - took 0.1 sec
+Epoch 16/3000: val_loss: 0.95393 - val_rmse: 0.97669 - val_mae: 0.97669 - took 0.1 sec
+Epoch 17/3000: val_loss: 0.94939 - val_rmse: 0.97436 - val_mae: 0.97436 - took 0.1 sec
+Epoch 18/3000: val_loss: 0.94528 - val_rmse: 0.97226 - val_mae: 0.97226 - took 0.1 sec
+Epoch 19/3000: val_loss: 0.94157 - val_rmse: 0.97034 - val_mae: 0.97034 - took 0.1 sec
+Epoch 20/3000: val_loss: 0.93818 - val_rmse: 0.9686 - val_mae: 0.9686 - took 0.1 sec
+Epoch 21/3000: val_loss: 0.93509 - val_rmse: 0.967 - val_mae: 0.967 - took 0.1 sec
+Epoch 22/3000: val_loss: 0.93226 - val_rmse: 0.96554 - val_mae: 0.96554 - took 0.1 sec
+Epoch 23/3000: val_loss: 0.92967 - val_rmse: 0.96419 - val_mae: 0.96419 - took 0.1 sec
+Epoch 24/3000: val_loss: 0.92728 - val_rmse: 0.96296 - val_mae: 0.96296 - took 0.1 sec
+Epoch 25/3000: val_loss: 0.92509 - val_rmse: 0.96181 - val_mae: 0.96181 - took 0.1 sec
+Epoch 26/3000: val_loss: 0.92305 - val_rmse: 0.96076 - val_mae: 0.96076 - took 0.1 sec
+Epoch 27/3000: val_loss: 0.92118 - val_rmse: 0.95978 - val_mae: 0.95978 - took 0.1 sec
+Epoch 28/3000: val_loss: 0.91944 - val_rmse: 0.95887 - val_mae: 0.95887 - took 0.1 sec
+Epoch 29/3000: val_loss: 0.91782 - val_rmse: 0.95803 - val_mae: 0.95803 - took 0.1 sec
+Epoch 30/3000: val_loss: 0.91632 - val_rmse: 0.95725 - val_mae: 0.95725 - took 0.1 sec
+Epoch 31/3000: val_loss: 0.91492 - val_rmse: 0.95652 - val_mae: 0.95652 - took 0.1 sec
+Epoch 32/3000: val_loss: 0.91362 - val_rmse: 0.95584 - val_mae: 0.95584 - took 0.1 sec
+Epoch 33/3000: val_loss: 0.91241 - val_rmse: 0.9552 - val_mae: 0.9552 - took 0.1 sec
+Epoch 34/3000: val_loss: 0.91128 - val_rmse: 0.95461 - val_mae: 0.95461 - took 0.1 sec
+Epoch 35/3000: val_loss: 0.91023 - val_rmse: 0.95406 - val_mae: 0.95406 - took 0.2 sec
+Epoch 36/3000: val_loss: 0.90924 - val_rmse: 0.95354 - val_mae: 0.95354 - took 0.1 sec
+Epoch 37/3000: val_loss: 0.90832 - val_rmse: 0.95306 - val_mae: 0.95306 - took 0.1 sec
+Epoch 38/3000: val_loss: 0.90746 - val_rmse: 0.9526 - val_mae: 0.9526 - took 0.1 sec
+Epoch 39/3000: val_loss: 0.90665 - val_rmse: 0.95218 - val_mae: 0.95218 - took 0.1 sec
+Epoch 40/3000: val_loss: 0.90589 - val_rmse: 0.95178 - val_mae: 0.95178 - took 0.1 sec
+Epoch 41/3000: val_loss: 0.90518 - val_rmse: 0.95141 - val_mae: 0.95141 - took 0.1 sec
+Epoch 42/3000: val_loss: 0.90452 - val_rmse: 0.95106 - val_mae: 0.95106 - took 0.1 sec
+Epoch 43/3000: val_loss: 0.9039 - val_rmse: 0.95074 - val_mae: 0.95074 - took 0.1 sec
+Epoch 44/3000: val_loss: 0.90331 - val_rmse: 0.95043 - val_mae: 0.95043 - took 0.1 sec
+Epoch 45/3000: val_loss: 0.90277 - val_rmse: 0.95014 - val_mae: 0.95014 - took 0.1 sec
+Epoch 46/3000: val_loss: 0.90225 - val_rmse: 0.94987 - val_mae: 0.94987 - took 0.1 sec
+Epoch 47/3000: val_loss: 0.90177 - val_rmse: 0.94962 - val_mae: 0.94962 - took 0.1 sec
+Epoch 48/3000: val_loss: 0.90132 - val_rmse: 0.94938 - val_mae: 0.94938 - took 0.1 sec
+Epoch 49/3000: val_loss: 0.9009 - val_rmse: 0.94916 - val_mae: 0.94916 - took 0.1 sec
+Epoch 50/3000: val_loss: 0.90051 - val_rmse: 0.94895 - val_mae: 0.94895 - took 0.1 sec
+Epoch 51/3000: val_loss: 0.90014 - val_rmse: 0.94875 - val_mae: 0.94875 - took 0.1 sec
+Epoch 52/3000: val_loss: 0.89979 - val_rmse: 0.94857 - val_mae: 0.94857 - took 0.1 sec
+Epoch 53/3000: val_loss: 0.89946 - val_rmse: 0.9484 - val_mae: 0.9484 - took 0.1 sec
+Epoch 54/3000: val_loss: 0.89916 - val_rmse: 0.94824 - val_mae: 0.94824 - took 0.1 sec
+Epoch 55/3000: val_loss: 0.89888 - val_rmse: 0.94809 - val_mae: 0.94809 - took 0.1 sec
+Epoch 56/3000: val_loss: 0.89861 - val_rmse: 0.94795 - val_mae: 0.94795 - took 0.1 sec
+Epoch 57/3000: val_loss: 0.89837 - val_rmse: 0.94782 - val_mae: 0.94782 - took 0.1 sec
+Epoch 58/3000: val_loss: 0.89814 - val_rmse: 0.9477 - val_mae: 0.9477 - took 0.1 sec
+Epoch 59/3000: val_loss: 0.89792 - val_rmse: 0.94759 - val_mae: 0.94759 - took 0.1 sec
+Epoch 60/3000: val_loss: 0.89772 - val_rmse: 0.94748 - val_mae: 0.94748 - took 0.1 sec
+Epoch 61/3000: val_loss: 0.89754 - val_rmse: 0.94738 - val_mae: 0.94738 - took 0.1 sec
+Epoch 62/3000: val_loss: 0.89736 - val_rmse: 0.94729 - val_mae: 0.94729 - took 0.1 sec
+Epoch 63/3000: val_loss: 0.89721 - val_rmse: 0.94721 - val_mae: 0.94721 - took 0.1 sec
+Epoch 64/3000: val_loss: 0.89706 - val_rmse: 0.94713 - val_mae: 0.94713 - took 0.1 sec
+Epoch 65/3000: val_loss: 0.89692 - val_rmse: 0.94706 - val_mae: 0.94706 - took 0.1 sec
+Epoch 66/3000: val_loss: 0.8968 - val_rmse: 0.94699 - val_mae: 0.94699 - took 0.1 sec
+Epoch 67/3000: val_loss: 0.89669 - val_rmse: 0.94693 - val_mae: 0.94693 - took 0.1 sec
+Epoch 68/3000: val_loss: 0.89658 - val_rmse: 0.94688 - val_mae: 0.94688 - took 0.1 sec
+Epoch 69/3000: val_loss: 0.89649 - val_rmse: 0.94683 - val_mae: 0.94683 - took 0.1 sec
+Epoch 70/3000: val_loss: 0.8964 - val_rmse: 0.94678 - val_mae: 0.94678 - took 0.2 sec
+Epoch 71/3000: val_loss: 0.89632 - val_rmse: 0.94674 - val_mae: 0.94674 - took 0.2 sec
+Epoch 72/3000: val_loss: 0.89626 - val_rmse: 0.94671 - val_mae: 0.94671 - took 0.2 sec
+Epoch 73/3000: val_loss: 0.89619 - val_rmse: 0.94668 - val_mae: 0.94668 - took 0.1 sec
+Epoch 74/3000: val_loss: 0.89614 - val_rmse: 0.94665 - val_mae: 0.94665 - took 0.1 sec
+Epoch 75/3000: val_loss: 0.89609 - val_rmse: 0.94662 - val_mae: 0.94662 - took 0.1 sec
+Epoch 76/3000: val_loss: 0.89605 - val_rmse: 0.9466 - val_mae: 0.9466 - took 0.1 sec
+Epoch 77/3000: val_loss: 0.89602 - val_rmse: 0.94658 - val_mae: 0.94658 - took 0.1 sec
+Epoch 78/3000: val_loss: 0.89599 - val_rmse: 0.94657 - val_mae: 0.94657 - took 0.1 sec
+Epoch 79/3000: val_loss: 0.89597 - val_rmse: 0.94656 - val_mae: 0.94656 - took 0.1 sec
+Epoch 80/3000: val_loss: 0.89595 - val_rmse: 0.94655 - val_mae: 0.94655 - took 0.1 sec
+Epoch 81/3000: val_loss: 0.89594 - val_rmse: 0.94654 - val_mae: 0.94654 - took 0.1 sec
+Epoch 82/3000: val_loss: 0.89594 - val_rmse: 0.94654 - val_mae: 0.94654 - took 0.1 sec
+Epoch 83/3000: val_loss: 0.89593 - val_rmse: 0.94654 - val_mae: 0.94654 - took 0.1 sec
+Epoch 84/3000: val_loss: 0.89594 - val_rmse: 0.94654 - val_mae: 0.94654 - took 0.1 sec
+Epoch 85/3000: val_loss: 0.89594 - val_rmse: 0.94654 - val_mae: 0.94654 - took 0.1 sec
+Epoch 86/3000: val_loss: 0.89596 - val_rmse: 0.94655 - val_mae: 0.94655 - took 0.1 sec
+Epoch 87/3000: val_loss: 0.89593 - val_rmse: 0.94653 - val_mae: 0.94653 - took 0.1 sec
+Epoch 88/3000: val_loss: 0.89592 - val_rmse: 0.94653 - val_mae: 0.94653 - took 0.1 sec
+Epoch 89/3000: val_loss: 0.89593 - val_rmse: 0.94653 - val_mae: 0.94653 - took 0.1 sec
+Epoch 90/3000: 0.9465421341386004
 
-Done 0:00:02.328197
+Done 0:00:12.828422
 Iteration No: 1 ended. Evaluation done at random point.
-Time taken: 2.3594
-Function value obtained: 1.0978
-Current minimum: 1.0978
+Time taken: 12.8385
+Function value obtained: 0.9465
+Current minimum: 0.9465
 Iteration No: 2 started. Evaluating function at random point.
-0.4974227841628042 6.303454858837285 3 1 0.0036244373537934055 0.007927759865826693 1.3179162534320906e-05 1.0494804983164936
-1.0978432124522302
-Epoch 1/2: val_loss: 1.22704 - val_rmse: 1.10772 - val_mae: 1.10772 - took 0.3 sec
-Epoch 2/2: val_loss: 1.1589 - val_rmse: 1.07652 - val_mae: 1.07652 - took 0.4 sec
-1.0765239747890651
+0.1727888793079346 76.26622962299606 3 1 0.00720154904754828 0.002783504143229651 0.001195187950019963 8.5873051285312
+0.9465421341386004
+Epoch 1/3000: val_loss: 1.19475 - val_rmse: 1.09305 - val_mae: 1.09305 - took 0.1 sec
+Epoch 2/3000: val_loss: 1.13265 - val_rmse: 1.06426 - val_mae: 1.06426 - took 0.1 sec
+Epoch 3/3000: val_loss: 1.08939 - val_rmse: 1.04374 - val_mae: 1.04374 - took 0.1 sec
+Epoch 4/3000: val_loss: 1.05771 - val_rmse: 1.02845 - val_mae: 1.02845 - took 0.1 sec
+Epoch 5/3000: val_loss: 1.03351 - val_rmse: 1.01662 - val_mae: 1.01662 - took 0.1 sec
+Epoch 6/3000: val_loss: 1.0144 - val_rmse: 1.00717 - val_mae: 1.00717 - took 0.1 sec
+Epoch 7/3000: val_loss: 0.99892 - val_rmse: 0.99946 - val_mae: 0.99946 - took 0.1 sec
+Epoch 8/3000: val_loss: 0.98614 - val_rmse: 0.99304 - val_mae: 0.99304 - took 0.1 sec
+Epoch 9/3000: val_loss: 0.97541 - val_rmse: 0.98763 - val_mae: 0.98763 - took 0.1 sec
+Epoch 10/3000: val_loss: 0.96629 - val_rmse: 0.983 - val_mae: 0.983 - took 0.1 sec
+Epoch 11/3000: val_loss: 0.95845 - val_rmse: 0.97901 - val_mae: 0.97901 - took 0.1 sec
+Epoch 12/3000: val_loss: 0.95166 - val_rmse: 0.97553 - val_mae: 0.97553 - took 0.1 sec
+Epoch 13/3000: val_loss: 0.94573 - val_rmse: 0.97249 - val_mae: 0.97249 - took 0.1 sec
+Epoch 14/3000: val_loss: 0.94051 - val_rmse: 0.9698 - val_mae: 0.9698 - took 0.1 sec
+Epoch 15/3000: val_loss: 0.9359 - val_rmse: 0.96742 - val_mae: 0.96742 - took 0.1 sec
+Epoch 16/3000: val_loss: 0.93179 - val_rmse: 0.96529 - val_mae: 0.96529 - took 0.1 sec
+Epoch 17/3000: val_loss: 0.92813 - val_rmse: 0.96339 - val_mae: 0.96339 - took 0.1 sec
+Epoch 18/3000: val_loss: 0.92484 - val_rmse: 0.96169 - val_mae: 0.96169 - took 0.1 sec
+Epoch 19/3000: val_loss: 0.92188 - val_rmse: 0.96015 - val_mae: 0.96015 - took 0.1 sec
+Epoch 20/3000: val_loss: 0.91921 - val_rmse: 0.95875 - val_mae: 0.95875 - took 0.1 sec
+Epoch 21/3000: val_loss: 0.91678 - val_rmse: 0.95749 - val_mae: 0.95749 - took 0.1 sec
+Epoch 22/3000: val_loss: 0.91458 - val_rmse: 0.95634 - val_mae: 0.95634 - took 0.1 sec
+Epoch 23/3000: val_loss: 0.91258 - val_rmse: 0.95529 - val_mae: 0.95529 - took 0.1 sec
+Epoch 24/3000: val_loss: 0.91075 - val_rmse: 0.95433 - val_mae: 0.95433 - took 0.1 sec
+Epoch 25/3000: val_loss: 0.90908 - val_rmse: 0.95346 - val_mae: 0.95346 - took 0.1 sec
+Epoch 26/3000: val_loss: 0.90755 - val_rmse: 0.95265 - val_mae: 0.95265 - took 0.1 sec
+Epoch 27/3000: val_loss: 0.90614 - val_rmse: 0.95192 - val_mae: 0.95192 - took 0.1 sec
+Epoch 28/3000: val_loss: 0.90485 - val_rmse: 0.95124 - val_mae: 0.95124 - took 0.1 sec
+Epoch 29/3000: val_loss: 0.90367 - val_rmse: 0.95061 - val_mae: 0.95061 - took 0.1 sec
+Epoch 30/3000: val_loss: 0.90257 - val_rmse: 0.95004 - val_mae: 0.95004 - took 0.1 sec
+Epoch 31/3000: val_loss: 0.90157 - val_rmse: 0.94951 - val_mae: 0.94951 - took 0.1 sec
+Epoch 32/3000: val_loss: 0.90064 - val_rmse: 0.94902 - val_mae: 0.94902 - took 0.1 sec
+Epoch 33/3000: val_loss: 0.89978 - val_rmse: 0.94857 - val_mae: 0.94857 - took 0.1 sec
+Epoch 34/3000: val_loss: 0.89899 - val_rmse: 0.94815 - val_mae: 0.94815 - took 0.1 sec
+Epoch 35/3000: val_loss: 0.89826 - val_rmse: 0.94777 - val_mae: 0.94777 - took 0.1 sec
+Epoch 36/3000: val_loss: 0.89758 - val_rmse: 0.94741 - val_mae: 0.94741 - took 0.1 sec
+Epoch 37/3000: val_loss: 0.89696 - val_rmse: 0.94708 - val_mae: 0.94708 - took 0.1 sec
+Epoch 38/3000: val_loss: 0.89638 - val_rmse: 0.94678 - val_mae: 0.94678 - took 0.1 sec
+Epoch 39/3000: val_loss: 0.89585 - val_rmse: 0.94649 - val_mae: 0.94649 - took 0.1 sec
+Epoch 40/3000: val_loss: 0.89536 - val_rmse: 0.94623 - val_mae: 0.94623 - took 0.1 sec
+Epoch 41/3000: val_loss: 0.89491 - val_rmse: 0.94599 - val_mae: 0.94599 - took 0.1 sec
+Epoch 42/3000: val_loss: 0.89449 - val_rmse: 0.94577 - val_mae: 0.94577 - took 0.1 sec
+Epoch 43/3000: val_loss: 0.8941 - val_rmse: 0.94557 - val_mae: 0.94557 - took 0.1 sec
+Epoch 44/3000: val_loss: 0.89375 - val_rmse: 0.94538 - val_mae: 0.94538 - took 0.1 sec
+Epoch 45/3000: val_loss: 0.89342 - val_rmse: 0.94521 - val_mae: 0.94521 - took 0.1 sec
+Epoch 46/3000: val_loss: 0.89312 - val_rmse: 0.94505 - val_mae: 0.94505 - took 0.1 sec
+Epoch 47/3000: val_loss: 0.89284 - val_rmse: 0.9449 - val_mae: 0.9449 - took 0.1 sec
+Epoch 48/3000: val_loss: 0.89259 - val_rmse: 0.94477 - val_mae: 0.94477 - took 0.1 sec
+Epoch 49/3000: val_loss: 0.89236 - val_rmse: 0.94465 - val_mae: 0.94465 - took 0.1 sec
+Epoch 50/3000: val_loss: 0.89215 - val_rmse: 0.94454 - val_mae: 0.94454 - took 0.1 sec
+Epoch 51/3000: val_loss: 0.89196 - val_rmse: 0.94444 - val_mae: 0.94444 - took 0.1 sec
+Epoch 52/3000: val_loss: 0.89178 - val_rmse: 0.94434 - val_mae: 0.94434 - took 0.1 sec
+Epoch 53/3000: val_loss: 0.89163 - val_rmse: 0.94426 - val_mae: 0.94426 - took 0.1 sec
+Epoch 54/3000: val_loss: 0.89149 - val_rmse: 0.94419 - val_mae: 0.94419 - took 0.1 sec
+Epoch 55/3000: val_loss: 0.89136 - val_rmse: 0.94412 - val_mae: 0.94412 - took 0.1 sec
+Epoch 56/3000: val_loss: 0.89125 - val_rmse: 0.94406 - val_mae: 0.94406 - took 0.1 sec
+Epoch 57/3000: val_loss: 0.89115 - val_rmse: 0.94401 - val_mae: 0.94401 - took 0.1 sec
+Epoch 58/3000: val_loss: 0.89107 - val_rmse: 0.94396 - val_mae: 0.94396 - took 0.1 sec
+Epoch 59/3000: val_loss: 0.89099 - val_rmse: 0.94392 - val_mae: 0.94392 - took 0.1 sec
+Epoch 60/3000: val_loss: 0.89093 - val_rmse: 0.94389 - val_mae: 0.94389 - took 0.1 sec
+Epoch 61/3000: val_loss: 0.89088 - val_rmse: 0.94386 - val_mae: 0.94386 - took 0.1 sec
+Epoch 62/3000: val_loss: 0.89084 - val_rmse: 0.94384 - val_mae: 0.94384 - took 0.1 sec
+Epoch 63/3000: val_loss: 0.8908 - val_rmse: 0.94382 - val_mae: 0.94382 - took 0.1 sec
+Epoch 64/3000: val_loss: 0.89078 - val_rmse: 0.94381 - val_mae: 0.94381 - took 0.1 sec
+Epoch 65/3000: val_loss: 0.89076 - val_rmse: 0.9438 - val_mae: 0.9438 - took 0.1 sec
+Epoch 66/3000: val_loss: 0.89076 - val_rmse: 0.9438 - val_mae: 0.9438 - took 0.1 sec
+Epoch 67/3000: val_loss: 0.89076 - val_rmse: 0.9438 - val_mae: 0.9438 - took 0.1 sec
+Epoch 68/3000: val_loss: 0.89076 - val_rmse: 0.9438 - val_mae: 0.9438 - took 0.1 sec
+Epoch 69/3000: val_loss: 0.89078 - val_rmse: 0.94381 - val_mae: 0.94381 - took 0.1 sec
+Epoch 70/3000: val_loss: 0.8908 - val_rmse: 0.94382 - val_mae: 0.94382 - took 0.1 sec
+Epoch 71/3000: val_loss: 0.89082 - val_rmse: 0.94383 - val_mae: 0.94383 - took 0.1 sec
+Epoch 72/3000: val_loss: 0.89078 - val_rmse: 0.94381 - val_mae: 0.94381 - took 0.1 sec
+Epoch 73/3000: val_loss: 0.89078 - val_rmse: 0.94381 - val_mae: 0.94381 - took 0.2 sec
+Epoch 74/3000: val_loss: 0.89078 - val_rmse: 0.94381 - val_mae: 0.94381 - took 0.2 sec
+Epoch 75/3000: 0.9437989536571388
 
-Done 0:00:02.528312
+Done 0:00:08.251275
 Iteration No: 2 ended. Evaluation done at random point.
-Time taken: 2.5912
-Function value obtained: 1.0765
-Current minimum: 1.0765
+Time taken: 8.2733
+Function value obtained: 0.9438
+Current minimum: 0.9438
 Iteration No: 3 started. Evaluating function at random point.
-0.11816089266286704 13.344608023730169 3 0 0.003758944674430716 0.001075965265125295 0.0011117509385204377 2.4200097976886434
-1.0765239747890651
-Epoch 1/2: val_loss: 1.22237 - val_rmse: 1.10561 - val_mae: 1.10561 - took 0.2 sec
-Epoch 2/2: val_loss: 1.16235 - val_rmse: 1.07812 - val_mae: 1.07812 - took 0.2 sec
-1.078123903885388
+0.6707774210171817 64.1426128271209 3 0 0.004125360393481155 0.004159390507541515 0.0010222321977024333 0.20052594320979575
+0.9437989536571388
+Epoch 1/3000: val_loss: 1.23605 - val_rmse: 1.11178 - val_mae: 1.11178 - took 0.1 sec
+Epoch 2/3000: val_loss: 1.172 - val_rmse: 1.08259 - val_mae: 1.08259 - took 0.1 sec
+Epoch 3/3000: val_loss: 1.12615 - val_rmse: 1.0612 - val_mae: 1.0612 - took 0.1 sec
+Epoch 4/3000: val_loss: 1.09174 - val_rmse: 1.04486 - val_mae: 1.04486 - took 0.1 sec
+Epoch 5/3000: val_loss: 1.06499 - val_rmse: 1.03198 - val_mae: 1.03198 - took 0.1 sec
+Epoch 6/3000: val_loss: 1.04362 - val_rmse: 1.02158 - val_mae: 1.02158 - took 0.1 sec
+Epoch 7/3000: val_loss: 1.02618 - val_rmse: 1.013 - val_mae: 1.013 - took 0.1 sec
+Epoch 8/3000: val_loss: 1.0117 - val_rmse: 1.00583 - val_mae: 1.00583 - took 0.1 sec
+Epoch 9/3000: val_loss: 0.99952 - val_rmse: 0.99976 - val_mae: 0.99976 - took 0.2 sec
+Epoch 10/3000: val_loss: 0.98913 - val_rmse: 0.99455 - val_mae: 0.99455 - took 0.1 sec
+Epoch 11/3000: val_loss: 0.98019 - val_rmse: 0.99005 - val_mae: 0.99005 - took 0.1 sec
+Epoch 12/3000: val_loss: 0.97242 - val_rmse: 0.98612 - val_mae: 0.98612 - took 0.1 sec
+Epoch 13/3000: val_loss: 0.96563 - val_rmse: 0.98266 - val_mae: 0.98266 - took 0.1 sec
+Epoch 14/3000: val_loss: 0.95963 - val_rmse: 0.97961 - val_mae: 0.97961 - took 0.1 sec
+Epoch 15/3000: val_loss: 0.95432 - val_rmse: 0.97689 - val_mae: 0.97689 - took 0.1 sec
+Epoch 16/3000: val_loss: 0.94958 - val_rmse: 0.97446 - val_mae: 0.97446 - took 0.1 sec
+Epoch 17/3000: val_loss: 0.94533 - val_rmse: 0.97228 - val_mae: 0.97228 - took 0.1 sec
+Epoch 18/3000: val_loss: 0.94151 - val_rmse: 0.97031 - val_mae: 0.97031 - took 0.1 sec
+Epoch 19/3000: val_loss: 0.93805 - val_rmse: 0.96853 - val_mae: 0.96853 - took 0.1 sec
+Epoch 20/3000: val_loss: 0.93492 - val_rmse: 0.96691 - val_mae: 0.96691 - took 0.1 sec
+Epoch 21/3000: val_loss: 0.93207 - val_rmse: 0.96544 - val_mae: 0.96544 - took 0.1 sec
+Epoch 22/3000: val_loss: 0.92946 - val_rmse: 0.96409 - val_mae: 0.96409 - took 0.1 sec
+Epoch 23/3000: val_loss: 0.92708 - val_rmse: 0.96285 - val_mae: 0.96285 - took 0.1 sec
+Epoch 24/3000: val_loss: 0.92489 - val_rmse: 0.96171 - val_mae: 0.96171 - took 0.1 sec
+Epoch 25/3000: val_loss: 0.92288 - val_rmse: 0.96067 - val_mae: 0.96067 - took 0.1 sec
+Epoch 26/3000: val_loss: 0.92102 - val_rmse: 0.9597 - val_mae: 0.9597 - took 0.1 sec
+Epoch 27/3000: val_loss: 0.91931 - val_rmse: 0.95881 - val_mae: 0.95881 - took 0.1 sec
+Epoch 28/3000: val_loss: 0.91772 - val_rmse: 0.95798 - val_mae: 0.95798 - took 0.1 sec
+Epoch 29/3000: val_loss: 0.91625 - val_rmse: 0.95721 - val_mae: 0.95721 - took 0.1 sec
+Epoch 30/3000: val_loss: 0.91489 - val_rmse: 0.9565 - val_mae: 0.9565 - took 0.1 sec
+Epoch 31/3000: val_loss: 0.91362 - val_rmse: 0.95583 - val_mae: 0.95583 - took 0.1 sec
+Epoch 32/3000: val_loss: 0.91244 - val_rmse: 0.95522 - val_mae: 0.95522 - took 0.1 sec
+Epoch 33/3000: val_loss: 0.91134 - val_rmse: 0.95464 - val_mae: 0.95464 - took 0.1 sec
+Epoch 34/3000: val_loss: 0.91031 - val_rmse: 0.9541 - val_mae: 0.9541 - took 0.1 sec
+Epoch 35/3000: val_loss: 0.90935 - val_rmse: 0.9536 - val_mae: 0.9536 - took 0.1 sec
+Epoch 36/3000: val_loss: 0.90845 - val_rmse: 0.95313 - val_mae: 0.95313 - took 0.1 sec
+Epoch 37/3000: val_loss: 0.90761 - val_rmse: 0.95269 - val_mae: 0.95269 - took 0.1 sec
+Epoch 38/3000: val_loss: 0.90683 - val_rmse: 0.95227 - val_mae: 0.95227 - took 0.1 sec
+Epoch 39/3000: val_loss: 0.90609 - val_rmse: 0.95189 - val_mae: 0.95189 - took 0.1 sec
+Epoch 40/3000: val_loss: 0.9054 - val_rmse: 0.95152 - val_mae: 0.95152 - took 0.1 sec
+Epoch 41/3000: val_loss: 0.90475 - val_rmse: 0.95118 - val_mae: 0.95118 - took 0.1 sec
+Epoch 42/3000: val_loss: 0.90414 - val_rmse: 0.95086 - val_mae: 0.95086 - took 0.1 sec
+Epoch 43/3000: val_loss: 0.90357 - val_rmse: 0.95056 - val_mae: 0.95056 - took 0.1 sec
+Epoch 44/3000: val_loss: 0.90303 - val_rmse: 0.95028 - val_mae: 0.95028 - took 0.1 sec
+Epoch 45/3000: val_loss: 0.90252 - val_rmse: 0.95001 - val_mae: 0.95001 - took 0.1 sec
+Epoch 46/3000: val_loss: 0.90205 - val_rmse: 0.94976 - val_mae: 0.94976 - took 0.1 sec
+Epoch 47/3000: val_loss: 0.9016 - val_rmse: 0.94953 - val_mae: 0.94953 - took 0.1 sec
+Epoch 48/3000: val_loss: 0.90118 - val_rmse: 0.9493 - val_mae: 0.9493 - took 0.1 sec
+Epoch 49/3000: val_loss: 0.90078 - val_rmse: 0.9491 - val_mae: 0.9491 - took 0.1 sec
+Epoch 50/3000: val_loss: 0.90041 - val_rmse: 0.9489 - val_mae: 0.9489 - took 0.1 sec
+Epoch 51/3000: val_loss: 0.90006 - val_rmse: 0.94871 - val_mae: 0.94871 - took 0.1 sec
+Epoch 52/3000: val_loss: 0.89973 - val_rmse: 0.94854 - val_mae: 0.94854 - took 0.1 sec
+Epoch 53/3000: val_loss: 0.89942 - val_rmse: 0.94838 - val_mae: 0.94838 - took 0.1 sec
+Epoch 54/3000: val_loss: 0.89913 - val_rmse: 0.94822 - val_mae: 0.94822 - took 0.1 sec
+Epoch 55/3000: val_loss: 0.89885 - val_rmse: 0.94808 - val_mae: 0.94808 - took 0.1 sec
+Epoch 56/3000: val_loss: 0.89859 - val_rmse: 0.94794 - val_mae: 0.94794 - took 0.1 sec
+Epoch 57/3000: val_loss: 0.89835 - val_rmse: 0.94781 - val_mae: 0.94781 - took 0.1 sec
+Epoch 58/3000: val_loss: 0.89812 - val_rmse: 0.94769 - val_mae: 0.94769 - took 0.1 sec
+Epoch 59/3000: val_loss: 0.89791 - val_rmse: 0.94758 - val_mae: 0.94758 - took 0.1 sec
+Epoch 60/3000: val_loss: 0.89771 - val_rmse: 0.94747 - val_mae: 0.94747 - took 0.1 sec
+Epoch 61/3000: val_loss: 0.89752 - val_rmse: 0.94737 - val_mae: 0.94737 - took 0.1 sec
+Epoch 62/3000: val_loss: 0.89734 - val_rmse: 0.94728 - val_mae: 0.94728 - took 0.1 sec
+Epoch 63/3000: val_loss: 0.89717 - val_rmse: 0.94719 - val_mae: 0.94719 - took 0.1 sec
+Epoch 64/3000: val_loss: 0.89702 - val_rmse: 0.94711 - val_mae: 0.94711 - took 0.1 sec
+Epoch 65/3000: val_loss: 0.89687 - val_rmse: 0.94703 - val_mae: 0.94703 - took 0.1 sec
+Epoch 66/3000: val_loss: 0.89674 - val_rmse: 0.94696 - val_mae: 0.94696 - took 0.1 sec
+Epoch 67/3000: val_loss: 0.89661 - val_rmse: 0.9469 - val_mae: 0.9469 - took 0.1 sec
+Epoch 68/3000: val_loss: 0.89649 - val_rmse: 0.94683 - val_mae: 0.94683 - took 0.1 sec
+Epoch 69/3000: val_loss: 0.89638 - val_rmse: 0.94678 - val_mae: 0.94678 - took 0.1 sec
+Epoch 70/3000: val_loss: 0.89628 - val_rmse: 0.94672 - val_mae: 0.94672 - took 0.1 sec
+Epoch 71/3000: val_loss: 0.89619 - val_rmse: 0.94667 - val_mae: 0.94667 - took 0.1 sec
+Epoch 72/3000: val_loss: 0.8961 - val_rmse: 0.94663 - val_mae: 0.94663 - took 0.1 sec
+Epoch 73/3000: val_loss: 0.89602 - val_rmse: 0.94658 - val_mae: 0.94658 - took 0.1 sec
+Epoch 74/3000: val_loss: 0.89595 - val_rmse: 0.94654 - val_mae: 0.94654 - took 0.1 sec
+Epoch 75/3000: val_loss: 0.89588 - val_rmse: 0.94651 - val_mae: 0.94651 - took 0.1 sec
+Epoch 76/3000: val_loss: 0.89582 - val_rmse: 0.94648 - val_mae: 0.94648 - took 0.1 sec
+Epoch 77/3000: val_loss: 0.89576 - val_rmse: 0.94645 - val_mae: 0.94645 - took 0.1 sec
+Epoch 78/3000: val_loss: 0.89571 - val_rmse: 0.94642 - val_mae: 0.94642 - took 0.1 sec
+Epoch 79/3000: val_loss: 0.89566 - val_rmse: 0.94639 - val_mae: 0.94639 - took 0.1 sec
+Epoch 80/3000: val_loss: 0.89562 - val_rmse: 0.94637 - val_mae: 0.94637 - took 0.1 sec
+Epoch 81/3000: val_loss: 0.89558 - val_rmse: 0.94635 - val_mae: 0.94635 - took 0.1 sec
+Epoch 82/3000: val_loss: 0.89555 - val_rmse: 0.94634 - val_mae: 0.94634 - took 0.1 sec
+Epoch 83/3000: val_loss: 0.89552 - val_rmse: 0.94632 - val_mae: 0.94632 - took 0.1 sec
+Epoch 84/3000: val_loss: 0.8955 - val_rmse: 0.94631 - val_mae: 0.94631 - took 0.1 sec
+Epoch 85/3000: val_loss: 0.89548 - val_rmse: 0.9463 - val_mae: 0.9463 - took 0.1 sec
+Epoch 86/3000: val_loss: 0.89546 - val_rmse: 0.94629 - val_mae: 0.94629 - took 0.1 sec
+Epoch 87/3000: val_loss: 0.89545 - val_rmse: 0.94628 - val_mae: 0.94628 - took 0.1 sec
+Epoch 88/3000: val_loss: 0.89544 - val_rmse: 0.94628 - val_mae: 0.94628 - took 0.1 sec
+Epoch 89/3000: val_loss: 0.89544 - val_rmse: 0.94628 - val_mae: 0.94628 - took 0.1 sec
+Epoch 90/3000: val_loss: 0.89543 - val_rmse: 0.94627 - val_mae: 0.94627 - took 0.1 sec
+Epoch 91/3000: val_loss: 0.89543 - val_rmse: 0.94627 - val_mae: 0.94627 - took 0.1 sec
+Epoch 92/3000: val_loss: 0.89544 - val_rmse: 0.94628 - val_mae: 0.94628 - took 0.1 sec
+Epoch 93/3000: val_loss: 0.89538 - val_rmse: 0.94625 - val_mae: 0.94625 - took 0.1 sec
+Epoch 94/3000: val_loss: 0.89538 - val_rmse: 0.94625 - val_mae: 0.94625 - took 0.1 sec
+Epoch 95/3000: val_loss: 0.89538 - val_rmse: 0.94624 - val_mae: 0.94624 - took 0.1 sec
+Epoch 96/3000: val_loss: 0.89538 - val_rmse: 0.94624 - val_mae: 0.94624 - took 0.1 sec
+Epoch 97/3000: val_loss: 0.89538 - val_rmse: 0.94624 - val_mae: 0.94624 - took 0.1 sec
+Epoch 98/3000: val_loss: 0.89538 - val_rmse: 0.94624 - val_mae: 0.94624 - took 0.1 sec
+Epoch 99/3000: val_loss: 0.89538 - val_rmse: 0.94624 - val_mae: 0.94624 - took 0.1 sec
+Epoch 100/3000: val_loss: 0.89538 - val_rmse: 0.94624 - val_mae: 0.94624 - took 0.1 sec
+Epoch 101/3000: val_loss: 0.89538 - val_rmse: 0.94624 - val_mae: 0.94624 - took 0.1 sec
+Epoch 102/3000: 0.9462456578715407
 
-Done 0:00:01.547898
+Done 0:00:10.277416
 Iteration No: 3 ended. Evaluation done at random point.
-Time taken: 1.6047
-Function value obtained: 1.0781
-Current minimum: 1.0765
+Time taken: 10.2990
+Function value obtained: 0.9462
+Current minimum: 0.9438
 Iteration No: 4 started. Evaluating function at random point.
-0.3039226564754482 31.67681126955659 3 1 0.0010331699584400136 0.002185327134143591 0.00918566765484487 0.9523699634664167
-1.0765239747890651
-Epoch 1/2: val_loss: 1.17897 - val_rmse: 1.0858 - val_mae: 1.0858 - took 0.2 sec
-Epoch 2/2: val_loss: 1.12518 - val_rmse: 1.06074 - val_mae: 1.06074 - took 0.2 sec
-1.0607449115829588
+0.4962214680694571 50.118639501414016 3 1 0.0008791470070849355 0.006282241233614524 0.008341965868677173 4.712090977821862
+0.9437989536571388
+Epoch 1/3000: val_loss: 1.21173 - val_rmse: 1.10079 - val_mae: 1.10079 - took 0.1 sec
+Epoch 2/3000: val_loss: 1.15046 - val_rmse: 1.0726 - val_mae: 1.0726 - took 0.1 sec
+Epoch 3/3000: val_loss: 1.10761 - val_rmse: 1.05243 - val_mae: 1.05243 - took 0.1 sec
+Epoch 4/3000: val_loss: 1.07587 - val_rmse: 1.03724 - val_mae: 1.03724 - took 0.1 sec
+Epoch 5/3000: val_loss: 1.05128 - val_rmse: 1.02532 - val_mae: 1.02532 - took 0.1 sec
+Epoch 6/3000: val_loss: 1.03164 - val_rmse: 1.0157 - val_mae: 1.0157 - took 0.1 sec
+Epoch 7/3000: val_loss: 1.01557 - val_rmse: 1.00776 - val_mae: 1.00776 - took 0.1 sec
+Epoch 8/3000: val_loss: 1.0022 - val_rmse: 1.0011 - val_mae: 1.0011 - took 0.1 sec
+Epoch 9/3000: val_loss: 0.99091 - val_rmse: 0.99545 - val_mae: 0.99545 - took 0.1 sec
+Epoch 10/3000: val_loss: 0.98126 - val_rmse: 0.99059 - val_mae: 0.99059 - took 0.1 sec
+Epoch 11/3000: val_loss: 0.97294 - val_rmse: 0.98638 - val_mae: 0.98638 - took 0.1 sec
+Epoch 12/3000: val_loss: 0.96569 - val_rmse: 0.9827 - val_mae: 0.9827 - took 0.1 sec
+Epoch 13/3000: val_loss: 0.95933 - val_rmse: 0.97946 - val_mae: 0.97946 - took 0.1 sec
+Epoch 14/3000: val_loss: 0.95372 - val_rmse: 0.97659 - val_mae: 0.97659 - took 0.1 sec
+Epoch 15/3000: val_loss: 0.94874 - val_rmse: 0.97403 - val_mae: 0.97403 - took 0.1 sec
+Epoch 16/3000: val_loss: 0.94429 - val_rmse: 0.97175 - val_mae: 0.97175 - took 0.1 sec
+Epoch 17/3000: val_loss: 0.9403 - val_rmse: 0.96969 - val_mae: 0.96969 - took 0.1 sec
+Epoch 18/3000: val_loss: 0.93671 - val_rmse: 0.96784 - val_mae: 0.96784 - took 0.1 sec
+Epoch 19/3000: val_loss: 0.93346 - val_rmse: 0.96616 - val_mae: 0.96616 - took 0.1 sec
+Epoch 20/3000: val_loss: 0.93051 - val_rmse: 0.96463 - val_mae: 0.96463 - took 0.1 sec
+Epoch 21/3000: val_loss: 0.92782 - val_rmse: 0.96324 - val_mae: 0.96324 - took 0.1 sec
+Epoch 22/3000: val_loss: 0.92538 - val_rmse: 0.96196 - val_mae: 0.96196 - took 0.1 sec
+Epoch 23/3000: val_loss: 0.92313 - val_rmse: 0.9608 - val_mae: 0.9608 - took 0.1 sec
+Epoch 24/3000: val_loss: 0.92108 - val_rmse: 0.95973 - val_mae: 0.95973 - took 0.1 sec
+Epoch 25/3000: val_loss: 0.91919 - val_rmse: 0.95874 - val_mae: 0.95874 - took 0.1 sec
+Epoch 26/3000: val_loss: 0.91745 - val_rmse: 0.95784 - val_mae: 0.95784 - took 0.1 sec
+Epoch 27/3000: val_loss: 0.91584 - val_rmse: 0.957 - val_mae: 0.957 - took 0.1 sec
+Epoch 28/3000: val_loss: 0.91436 - val_rmse: 0.95622 - val_mae: 0.95622 - took 0.1 sec
+Epoch 29/3000: val_loss: 0.91299 - val_rmse: 0.9555 - val_mae: 0.9555 - took 0.1 sec
+Epoch 30/3000: val_loss: 0.91171 - val_rmse: 0.95484 - val_mae: 0.95484 - took 0.1 sec
+Epoch 31/3000: val_loss: 0.91053 - val_rmse: 0.95422 - val_mae: 0.95422 - took 0.1 sec
+Epoch 32/3000: val_loss: 0.90943 - val_rmse: 0.95364 - val_mae: 0.95364 - took 0.1 sec
+Epoch 33/3000: val_loss: 0.90841 - val_rmse: 0.95311 - val_mae: 0.95311 - took 0.1 sec
+Epoch 34/3000: val_loss: 0.90746 - val_rmse: 0.95261 - val_mae: 0.95261 - took 0.1 sec
+Epoch 35/3000: val_loss: 0.90658 - val_rmse: 0.95214 - val_mae: 0.95214 - took 0.1 sec
+Epoch 36/3000: val_loss: 0.90575 - val_rmse: 0.95171 - val_mae: 0.95171 - took 0.1 sec
+Epoch 37/3000: val_loss: 0.90498 - val_rmse: 0.9513 - val_mae: 0.9513 - took 0.1 sec
+Epoch 38/3000: val_loss: 0.90426 - val_rmse: 0.95093 - val_mae: 0.95093 - took 0.1 sec
+Epoch 39/3000: val_loss: 0.90359 - val_rmse: 0.95057 - val_mae: 0.95057 - took 0.1 sec
+Epoch 40/3000: val_loss: 0.90296 - val_rmse: 0.95024 - val_mae: 0.95024 - took 0.1 sec
+Epoch 41/3000: val_loss: 0.90238 - val_rmse: 0.94994 - val_mae: 0.94994 - took 0.1 sec
+Epoch 42/3000: val_loss: 0.90183 - val_rmse: 0.94965 - val_mae: 0.94965 - took 0.1 sec
+Epoch 43/3000: val_loss: 0.90132 - val_rmse: 0.94938 - val_mae: 0.94938 - took 0.1 sec
+Epoch 44/3000: val_loss: 0.90084 - val_rmse: 0.94912 - val_mae: 0.94912 - took 0.1 sec
+Epoch 45/3000: val_loss: 0.90039 - val_rmse: 0.94889 - val_mae: 0.94889 - took 0.1 sec
+Epoch 46/3000: val_loss: 0.89997 - val_rmse: 0.94867 - val_mae: 0.94867 - took 0.1 sec
+Epoch 47/3000: val_loss: 0.89958 - val_rmse: 0.94846 - val_mae: 0.94846 - took 0.1 sec
+Epoch 48/3000: val_loss: 0.89921 - val_rmse: 0.94827 - val_mae: 0.94827 - took 0.1 sec
+Epoch 49/3000: val_loss: 0.89887 - val_rmse: 0.94809 - val_mae: 0.94809 - took 0.1 sec
+Epoch 50/3000: val_loss: 0.89855 - val_rmse: 0.94792 - val_mae: 0.94792 - took 0.1 sec
+Epoch 51/3000: val_loss: 0.89825 - val_rmse: 0.94776 - val_mae: 0.94776 - took 0.1 sec
+Epoch 52/3000: val_loss: 0.89797 - val_rmse: 0.94761 - val_mae: 0.94761 - took 0.1 sec
+Epoch 53/3000: val_loss: 0.89771 - val_rmse: 0.94748 - val_mae: 0.94748 - took 0.1 sec
+Epoch 54/3000: val_loss: 0.89747 - val_rmse: 0.94735 - val_mae: 0.94735 - took 0.1 sec
+Epoch 55/3000: val_loss: 0.89724 - val_rmse: 0.94723 - val_mae: 0.94723 - took 0.1 sec
+Epoch 56/3000: val_loss: 0.89703 - val_rmse: 0.94712 - val_mae: 0.94712 - took 0.1 sec
+Epoch 57/3000: val_loss: 0.89684 - val_rmse: 0.94701 - val_mae: 0.94701 - took 0.1 sec
+Epoch 58/3000: val_loss: 0.89666 - val_rmse: 0.94692 - val_mae: 0.94692 - took 0.1 sec
+Epoch 59/3000: val_loss: 0.89649 - val_rmse: 0.94683 - val_mae: 0.94683 - took 0.1 sec
+Epoch 60/3000: val_loss: 0.89633 - val_rmse: 0.94675 - val_mae: 0.94675 - took 0.1 sec
+Epoch 61/3000: val_loss: 0.89619 - val_rmse: 0.94667 - val_mae: 0.94667 - took 0.1 sec
+Epoch 62/3000: val_loss: 0.89606 - val_rmse: 0.9466 - val_mae: 0.9466 - took 0.1 sec
+Epoch 63/3000: val_loss: 0.89594 - val_rmse: 0.94654 - val_mae: 0.94654 - took 0.1 sec
+Epoch 64/3000: val_loss: 0.89582 - val_rmse: 0.94648 - val_mae: 0.94648 - took 0.1 sec
+Epoch 65/3000: val_loss: 0.89572 - val_rmse: 0.94643 - val_mae: 0.94643 - took 0.1 sec
+Epoch 66/3000: val_loss: 0.89563 - val_rmse: 0.94638 - val_mae: 0.94638 - took 0.1 sec
+Epoch 67/3000: val_loss: 0.89555 - val_rmse: 0.94633 - val_mae: 0.94633 - took 0.1 sec
+Epoch 68/3000: val_loss: 0.89547 - val_rmse: 0.94629 - val_mae: 0.94629 - took 0.1 sec
+Epoch 69/3000: val_loss: 0.8954 - val_rmse: 0.94626 - val_mae: 0.94626 - took 0.1 sec
+Epoch 70/3000: val_loss: 0.89534 - val_rmse: 0.94623 - val_mae: 0.94623 - took 0.1 sec
+Epoch 71/3000: val_loss: 0.89529 - val_rmse: 0.9462 - val_mae: 0.9462 - took 0.1 sec
+Epoch 72/3000: val_loss: 0.89524 - val_rmse: 0.94617 - val_mae: 0.94617 - took 0.1 sec
+Epoch 73/3000: val_loss: 0.8952 - val_rmse: 0.94615 - val_mae: 0.94615 - took 0.1 sec
+Epoch 74/3000: val_loss: 0.89517 - val_rmse: 0.94613 - val_mae: 0.94613 - took 0.1 sec
+Epoch 75/3000: val_loss: 0.89514 - val_rmse: 0.94612 - val_mae: 0.94612 - took 0.2 sec
+Epoch 76/3000: val_loss: 0.89511 - val_rmse: 0.94611 - val_mae: 0.94611 - took 0.1 sec
+Epoch 77/3000: val_loss: 0.8951 - val_rmse: 0.9461 - val_mae: 0.9461 - took 0.2 sec
+Epoch 78/3000: val_loss: 0.89508 - val_rmse: 0.94609 - val_mae: 0.94609 - took 0.1 sec
+Epoch 79/3000: val_loss: 0.89508 - val_rmse: 0.94608 - val_mae: 0.94608 - took 0.1 sec
+Epoch 80/3000: val_loss: 0.89507 - val_rmse: 0.94608 - val_mae: 0.94608 - took 0.1 sec
+Epoch 81/3000: val_loss: 0.89507 - val_rmse: 0.94608 - val_mae: 0.94608 - took 0.1 sec
+Epoch 82/3000: val_loss: 0.89508 - val_rmse: 0.94609 - val_mae: 0.94609 - took 0.1 sec
+Epoch 83/3000: val_loss: 0.89509 - val_rmse: 0.94609 - val_mae: 0.94609 - took 0.1 sec
+Epoch 84/3000: val_loss: 0.89504 - val_rmse: 0.94606 - val_mae: 0.94606 - took 0.1 sec
+Epoch 85/3000: val_loss: 0.89504 - val_rmse: 0.94606 - val_mae: 0.94606 - took 0.1 sec
+Epoch 86/3000: val_loss: 0.89504 - val_rmse: 0.94607 - val_mae: 0.94607 - took 0.1 sec
+Epoch 87/3000: val_loss: 0.89504 - val_rmse: 0.94607 - val_mae: 0.94607 - took 0.1 sec
+Epoch 88/3000: val_loss: 0.89505 - val_rmse: 0.94607 - val_mae: 0.94607 - took 0.1 sec
+Epoch 89/3000: val_loss: 0.89505 - val_rmse: 0.94607 - val_mae: 0.94607 - took 0.1 sec
+Epoch 90/3000: val_loss: 0.89505 - val_rmse: 0.94607 - val_mae: 0.94607 - took 0.1 sec
+Epoch 91/3000: val_loss: 0.89505 - val_rmse: 0.94607 - val_mae: 0.94607 - took 0.1 sec
+Epoch 92/3000: val_loss: 0.89505 - val_rmse: 0.94607 - val_mae: 0.94607 - took 0.1 sec
+Epoch 93/3000: 0.9460634156262935
 
-Done 0:00:02.009659
+Done 0:00:09.779768
 Iteration No: 4 ended. Evaluation done at random point.
-Time taken: 2.0705
-Function value obtained: 1.0607
-Current minimum: 1.0607
+Time taken: 9.8090
+Function value obtained: 0.9461
+Current minimum: 0.9438
 Iteration No: 5 started. Evaluating function at random point.
-0.4607880628152254 97.61884542976972 3 0 0.00665351538256807 0.002466649603426704 0.0056151203072435625 7.250428784841681
-1.0607449115829588
-Epoch 1/2: val_loss: 1.23968 - val_rmse: 1.11341 - val_mae: 1.11341 - took 0.2 sec
-Epoch 2/2: val_loss: 1.17566 - val_rmse: 1.08428 - val_mae: 1.08428 - took 0.2 sec
-1.0842774913673114
-
-Done 0:00:01.493693
-Iteration No: 5 ended. Evaluation done at random point.
-Time taken: 1.6000
-Function value obtained: 1.0843
-Current minimum: 1.0607
-Iteration No: 6 started. Evaluating function at random point.
-0.8858040023716925 41.74435051872366 3 1 0.006276234016540968 0.007577412694577166 0.0029822770845426183 4.423741889904714
-1.0607449115829588
-Epoch 1/2: val_loss: 1.22106 - val_rmse: 1.10501 - val_mae: 1.10501 - took 0.1 sec
-Epoch 2/2: val_loss: 1.15677 - val_rmse: 1.07553 - val_mae: 1.07553 - took 0.2 sec
-1.0755343484784814
-
-Done 0:00:01.462649
-Iteration No: 6 ended. Evaluation done at random point.
-Time taken: 1.5314
-Function value obtained: 1.0755
-Current minimum: 1.0607
-Iteration No: 7 started. Evaluating function at random point.
-0.46769372179729557 5.616654433879934 3 0 0.002218938772876636 0.0008081590642152553 0.006240436983912645 8.352794170346979
-1.0607449115829588
-Epoch 1/2: val_loss: 1.23411 - val_rmse: 1.11091 - val_mae: 1.11091 - took 0.1 sec
-Epoch 2/2: val_loss: 1.17118 - val_rmse: 1.08221 - val_mae: 1.08221 - took 0.2 sec
-1.0822101998400662
-
-Done 0:00:01.125320
-Iteration No: 7 ended. Evaluation done at random point.
-Time taken: 1.1722
-Function value obtained: 1.0822
-Current minimum: 1.0607
-Iteration No: 8 started. Evaluating function at random point.
-0.70001252027023 35.319111872425594 3 0 0.0006747710843400873 0.004305383386555458 0.009460488139570893 4.213776156592374
-1.0607449115829588
-Epoch 1/2: val_loss: 1.29474 - val_rmse: 1.13787 - val_mae: 1.13787 - took 0.2 sec
-Epoch 2/2: val_loss: 1.20429 - val_rmse: 1.0974 - val_mae: 1.0974 - took 0.1 sec
-1.0974027714995536
-
-Done 0:00:00.942877
-Iteration No: 8 ended. Evaluation done at random point.
-Time taken: 0.9907
-Function value obtained: 1.0974
-Current minimum: 1.0607
-Iteration No: 9 started. Evaluating function at random point.
-0.8974506315985903 81.99345205757302 3 0 0.0011128859420173273 0.0032319417697741102 0.002396738926479481 6.340818801759
-1.0607449115829588
-Epoch 1/2: val_loss: 1.21735 - val_rmse: 1.10334 - val_mae: 1.10334 - took 0.1 sec
-Epoch 2/2: val_loss: 1.1584 - val_rmse: 1.07629 - val_mae: 1.07629 - took 0.2 sec
-1.0762877528002563
-
-Done 0:00:01.103674
-Iteration No: 9 ended. Evaluation done at random point.
-Time taken: 1.1565
-Function value obtained: 1.0763
-Current minimum: 1.0607
-Iteration No: 10 started. Evaluating function at random point.
-0.9689375646403264 24.577911292007663 3 1 0.006864474542303767 0.007508443529535527 0.006450220378134605 5.070461537985458
-1.0607449115829588
-Epoch 1/2: val_loss: 1.30866 - val_rmse: 1.14397 - val_mae: 1.14397 - took 0.2 sec
-Epoch 2/2: val_loss: 1.20991 - val_rmse: 1.09996 - val_mae: 1.09996 - took 0.2 sec
-1.0999579435485152
-
-Done 0:00:01.034386
-Iteration No: 10 ended. Evaluation done at random point.
-Time taken: 2.3813
-Function value obtained: 1.1000
-Current minimum: 1.0607
-Iteration No: 11 started. Searching for the next optimal point.
-0.39092698542746845 29.266125631014337 3 1 0.008705490928830589 0.0016824542038976636 0.0002527544787407761 0.4672233081154165
-1.0607449115829588
-Epoch 1/2: 
+0.701177193249195 33.81640477120125 3 1 0.0052297892933485845 0.007038052345317202 0.008153226591903342 9.193398316910978
+0.9437989536571388
+Epoch 1/3000: val_loss: 1.21999 - val_rmse: 1.10453 - val_mae: 1.10453 - took 0.1 sec
+Epoch 2/3000: val_loss: 1.15471 - val_rmse: 1.07457 - val_mae: 1.07457 - took 0.1 sec
+Epoch 3/3000: val_loss: 1.10945 - val_rmse: 1.05331 - val_mae: 1.05331 - took 0.1 sec
+Epoch 4/3000: val_loss: 1.07625 - val_rmse: 1.03742 - val_mae: 1.03742 - took 0.1 sec
+Epoch 5/3000: val_loss: 1.05087 - val_rmse: 1.02512 - val_mae: 1.02512 - took 0.1 sec
+Epoch 6/3000: val_loss: 1.03088 - val_rmse: 1.01532 - val_mae: 1.01532 - took 0.1 sec
+Epoch 7/3000: val_loss: 1.01473 - val_rmse: 1.00734 - val_mae: 1.00734 - took 0.1 sec
+Epoch 8/3000: val_loss: 1.00145 - val_rmse: 1.00072 - val_mae: 1.00072 - took 0.1 sec
+Epoch 9/3000: val_loss: 0.99033 - val_rmse: 0.99515 - val_mae: 0.99515 - took 0.1 sec
+Epoch 10/3000: val_loss: 0.98091 - val_rmse: 0.99041 - val_mae: 0.99041 - took 0.1 sec
+Epoch 11/3000: val_loss: 0.97284 - val_rmse: 0.98633 - val_mae: 0.98633 - took 0.1 sec
+Epoch 12/3000: val_loss: 0.96586 - val_rmse: 0.98278 - val_mae: 0.98278 - took 0.1 sec
+Epoch 13/3000: val_loss: 0.95977 - val_rmse: 0.97968 - val_mae: 0.97968 - took 0.1 sec
+Epoch 14/3000: val_loss: 0.95442 - val_rmse: 0.97695 - val_mae: 0.97695 - took 0.1 sec
+Epoch 15/3000: val_loss: 0.94969 - val_rmse: 0.97452 - val_mae: 0.97452 - took 0.1 sec
+Epoch 16/3000: val_loss: 0.94549 - val_rmse: 0.97236 - val_mae: 0.97236 - took 0.1 sec
+Epoch 17/3000: val_loss: 0.94173 - val_rmse: 0.97043 - val_mae: 0.97043 - took 0.1 sec
+Epoch 18/3000: val_loss: 0.93835 - val_rmse: 0.96869 - val_mae: 0.96869 - took 0.1 sec
+Epoch 19/3000: val_loss: 0.93531 - val_rmse: 0.96711 - val_mae: 0.96711 - took 0.1 sec
+Epoch 20/3000: val_loss: 0.93256 - val_rmse: 0.96569 - val_mae: 0.96569 - took 0.1 sec
+Epoch 21/3000: val_loss: 0.93006 - val_rmse: 0.96439 - val_mae: 0.96439 - took 0.1 sec
+Epoch 22/3000: val_loss: 0.92778 - val_rmse: 0.96321 - val_mae: 0.96321 - took 0.1 sec
+Epoch 23/3000: val_loss: 0.9257 - val_rmse: 0.96213 - val_mae: 0.96213 - took 0.1 sec
+Epoch 24/3000: val_loss: 0.9238 - val_rmse: 0.96115 - val_mae: 0.96115 - took 0.1 sec
+Epoch 25/3000: val_loss: 0.92206 - val_rmse: 0.96024 - val_mae: 0.96024 - took 0.1 sec
+Epoch 26/3000: val_loss: 0.92045 - val_rmse: 0.9594 - val_mae: 0.9594 - took 0.1 sec
+Epoch 27/3000: val_loss: 0.91898 - val_rmse: 0.95863 - val_mae: 0.95863 - took 0.1 sec
+Epoch 28/3000: val_loss: 0.91762 - val_rmse: 0.95792 - val_mae: 0.95792 - took 0.2 sec
+Epoch 29/3000: val_loss: 0.91636 - val_rmse: 0.95727 - val_mae: 0.95727 - took 0.1 sec
+Epoch 30/3000: val_loss: 0.91519 - val_rmse: 0.95666 - val_mae: 0.95666 - took 0.1 sec
+Epoch 31/3000: val_loss: 0.91411 - val_rmse: 0.95609 - val_mae: 0.95609 - took 0.1 sec
+Epoch 32/3000: val_loss: 0.91311 - val_rmse: 0.95557 - val_mae: 0.95557 - took 0.2 sec
+Epoch 33/3000: val_loss: 0.91218 - val_rmse: 0.95508 - val_mae: 0.95508 - took 0.2 sec
+Epoch 34/3000: val_loss: 0.91132 - val_rmse: 0.95463 - val_mae: 0.95463 - took 0.1 sec
+Epoch 35/3000: val_loss: 0.91052 - val_rmse: 0.95421 - val_mae: 0.95421 - took 0.1 sec
+Epoch 36/3000: val_loss: 0.90977 - val_rmse: 0.95382 - val_mae: 0.95382 - took 0.1 sec
+Epoch 37/3000: val_loss: 0.90907 - val_rmse: 0.95345 - val_mae: 0.95345 - took 0.1 sec
+Epoch 38/3000: val_loss: 0.90842 - val_rmse: 0.95311 - val_mae: 0.95311 - took 0.1 sec
+Epoch 39/3000: val_loss: 0.90782 - val_rmse: 0.95279 - val_mae: 0.95279 - took 0.1 sec
+Epoch 40/3000: val_loss: 0.90725 - val_rmse: 0.9525 - val_mae: 0.9525 - took 0.1 sec
+Epoch 41/3000: val_loss: 0.90672 - val_rmse: 0.95222 - val_mae: 0.95222 - took 0.1 sec
+Epoch 42/3000: val_loss: 0.90623 - val_rmse: 0.95196 - val_mae: 0.95196 - took 0.1 sec
+Epoch 43/3000: val_loss: 0.90577 - val_rmse: 0.95172 - val_mae: 0.95172 - took 0.1 sec
+Epoch 44/3000: val_loss: 0.90534 - val_rmse: 0.9515 - val_mae: 0.9515 - took 0.1 sec
+Epoch 45/3000: val_loss: 0.90494 - val_rmse: 0.95128 - val_mae: 0.95128 - took 0.1 sec
+Epoch 46/3000: val_loss: 0.90457 - val_rmse: 0.95109 - val_mae: 0.95109 - took 0.1 sec
+Epoch 47/3000: val_loss: 0.90422 - val_rmse: 0.9509 - val_mae: 0.9509 - took 0.1 sec
+Epoch 48/3000: val_loss: 0.90389 - val_rmse: 0.95073 - val_mae: 0.95073 - took 0.1 sec
+Epoch 49/3000: val_loss: 0.90359 - val_rmse: 0.95057 - val_mae: 0.95057 - took 0.1 sec
+Epoch 50/3000: val_loss: 0.90331 - val_rmse: 0.95042 - val_mae: 0.95042 - took 0.1 sec
+Epoch 51/3000: val_loss: 0.90304 - val_rmse: 0.95028 - val_mae: 0.95028 - took 0.1 sec
+Epoch 52/3000: val_loss: 0.90279 - val_rmse: 0.95016 - val_mae: 0.95016 - took 0.1 sec
+Epoch 53/3000: val_loss: 0.90257 - val_rmse: 0.95003 - val_mae: 0.95003 - took 0.1 sec
+Epoch 54/3000: val_loss: 0.90235 - val_rmse: 0.94992 - val_mae: 0.94992 - took 0.1 sec
+Epoch 55/3000: val_loss: 0.90215 - val_rmse: 0.94982 - val_mae: 0.94982 - took 0.1 sec
+Epoch 56/3000: val_loss: 0.90197 - val_rmse: 0.94972 - val_mae: 0.94972 - took 0.1 sec
+Epoch 57/3000: val_loss: 0.9018 - val_rmse: 0.94963 - val_mae: 0.94963 - took 0.1 sec
+Epoch 58/3000: val_loss: 0.90164 - val_rmse: 0.94955 - val_mae: 0.94955 - took 0.1 sec
+Epoch 59/3000: val_loss: 0.9015 - val_rmse: 0.94947 - val_mae: 0.94947 - took 0.1 sec
+Epoch 60/3000: val_loss: 0.90136 - val_rmse: 0.9494 - val_mae: 0.9494 - took 0.1 sec
+Epoch 61/3000: val_loss: 0.90124 - val_rmse: 0.94934 - val_mae: 0.94934 - took 0.1 sec
+Epoch 62/3000: val_loss: 0.90112 - val_rmse: 0.94928 - val_mae: 0.94928 - took 0.1 sec
+Epoch 63/3000: val_loss: 0.90102 - val_rmse: 0.94922 - val_mae: 0.94922 - took 0.1 sec
+Epoch 64/3000: val_loss: 0.90092 - val_rmse: 0.94917 - val_mae: 0.94917 - took 0.2 sec
+Epoch 65/3000: val_loss: 0.90084 - val_rmse: 0.94912 - val_mae: 0.94912 - took 0.1 sec
+Epoch 66/3000: val_loss: 0.90076 - val_rmse: 0.94908 - val_mae: 0.94908 - took 0.1 sec
+Epoch 67/3000: val_loss: 0.90069 - val_rmse: 0.94905 - val_mae: 0.94905 - took 0.1 sec
+Epoch 68/3000: val_loss: 0.90062 - val_rmse: 0.94901 - val_mae: 0.94901 - took 0.1 sec
+Epoch 69/3000: val_loss: 0.90057 - val_rmse: 0.94898 - val_mae: 0.94898 - took 0.2 sec
+Epoch 70/3000: val_loss: 0.90052 - val_rmse: 0.94896 - val_mae: 0.94896 - took 0.1 sec
+Epoch 71/3000: val_loss: 0.90048 - val_rmse: 0.94893 - val_mae: 0.94893 - took 0.1 sec
+Epoch 72/3000: val_loss: 0.90044 - val_rmse: 0.94891 - val_mae: 0.94891 - took 0.1 sec
+Epoch 73/3000: val_loss: 0.90041 - val_rmse: 0.9489 - val_mae: 0.9489 - took 0.2 sec
+Epoch 74/3000: val_loss: 0.90038 - val_rmse: 0.94888 - val_mae: 0.94888 - took 0.2 sec
+Epoch 75/3000: val_loss: 0.90036 - val_rmse: 0.94887 - val_mae: 0.94887 - took 0.1 sec
+Epoch 76/3000: val_loss: 0.90034 - val_rmse: 0.94886 - val_mae: 0.94886 - took 0.1 sec
+Epoch 77/3000: val_loss: 0.90033 - val_rmse: 0.94886 - val_mae: 0.94886 - took 0.1 sec
+Epoch 78/3000: val_loss: 0.90032 - val_rmse: 0.94885 - val_mae: 0.94885 - took 0.1 sec
+Epoch 79/3000: val_loss: 0.90032 - val_rmse: 0.94885 - val_mae: 0.94885 - took 0.1 sec
+Epoch 80/3000: val_loss: 0.90032 - val_rmse: 0.94885 - val_mae: 0.94885 - took 0.1 sec
+Epoch 81/3000: val_loss: 0.90032 - val_rmse: 0.94885 - val_mae: 0.94885 - took 0.1 sec
+Epoch 82/3000: val_loss: 0.90033 - val_rmse: 0.94886 - val_mae: 0.94886 - took 0.1 sec
+Epoch 83/3000: val_loss: 0.90029 - val_rmse: 0.94884 - val_mae: 0.94884 - took 0.1 sec
+Epoch 84/3000: val_loss: 0.9003 - val_rmse: 0.94884 - val_mae: 0.94884 - took 0.1 sec
+Epoch 85/3000: val_loss: 0.9003 - val_rmse: 0.94884 - val_mae: 0.94884 - took 0.1 sec
+Epoch 86/3000: val_loss: 0.9003 - val_rmse: 0.94884 - val_mae: 0.94884 - took 0.1 sec
+Epoch 87/3000: val_loss: 0.9003 - val_rmse: 0.94884 - val_mae: 0.94884 - took 0.1 sec
+Epoch 88/3000: val_loss: 0.9003 - val_rmse: 0.94884 - val_mae: 0.94884 - took 0.1 sec
+Epoch 89/3000: val_loss: 0.90031 - val_rmse: 0.94884 - val_mae: 0.94884 - took 0.1 sec
+Epoch 90/3000: val_loss: 0.90031 - val_rmse: 0.94884 - val_mae: 0.94884 - took 0.1 sec
+Epoch 91/3000: val_loss: 0.90031 - val_rmse: 0.94885 - val_mae: 0.94885

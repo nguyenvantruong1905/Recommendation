@@ -35,10 +35,10 @@ if __name__ == "__main__":
     #                 names=["u_id", "i_id", "rating", "timestamps"])
     try :
         while True:
-            path_file_train = (r"/home/truong/auto-recommender/movieslen_data/train.txt")
-            path_file_test = (r"/home/truong/auto-recommender/movieslen_data/test1.txt")
-            # path_file_train = (r"C:\Users\nvtru\Desktop\auto-recommender\movieslen_data\train.txt")
-            # path_file_test = (r"C:\Users\nvtru\Desktop\auto-recommender\movieslen_data\test1.txt")
+            # path_file_train = (r"/home/truong/auto-recommender/movieslen_data/train.txt")
+            # path_file_test = (r"/home/truong/auto-recommender/movieslen_data/test1.txt")
+            path_file_train = (r"C:\Users\nvtru\Desktop\auto-recommender\movieslen_data\train.txt")
+            path_file_test = (r"C:\Users\nvtru\Desktop\auto-recommender\movieslen_data\test1.txt")
             train = pd.read_csv(path_file_train, sep=",",
                             names=["u_id", "i_id", "rating", "timestamps"])
             test = pd.read_csv(path_file_test, sep=",",
@@ -52,7 +52,6 @@ if __name__ == "__main__":
             train['action_exam'] = pd.Series(action_exam_train,index=train.index)
             test['time_exam'] = pd.Series(time_exam_test,index=test.index)
             test['action_exam'] = pd.Series(action_exam_test,index=test.index)
-
             # path_file_train = (
             #     r"/home/truong/AI-Recommender/project/data/diemthidaihoc2020/train.csv"
             # )
@@ -62,7 +61,6 @@ if __name__ == "__main__":
             # train = pd.read_csv(path_file_train, sep=",", names=["u_id", "i_id", "rating"])
             # test = pd.read_csv(path_file_test, sep=",", names=["u_id", "i_id", "rating"])
         #########################################################
-
         # optimization_Edulive
             space_SVD_Edulive = [
                 Real(1e-4, 1e-0, "uniform", name="reg"),
@@ -104,8 +102,8 @@ if __name__ == "__main__":
 
                 return a
         ##############################################################
-            num_epochs = 2
-            lr = 1e-3
+            num_epochs = 3000
+            lr = 1e-5
             dataset = "movielens"
             prefix = dataset + "_" + "edulive"
 
@@ -132,14 +130,14 @@ if __name__ == "__main__":
                     n_init_points = -len(x_0)
                 else:
                     n_init_points = 11 - len(x_0)
-                ncalls = 11 - len(x_0)
+                ncalls = 60 - len(x_0)
                 r_state = res.random_state
                 b_estimator = res.specs["args"]["base_estimator"]
             except:
                 x_0 = None
                 y_0 = None
                 n_init_points = 10
-                ncalls = 11
+                ncalls = 60
                 r_state = None
                 b_estimator = None
 
@@ -179,5 +177,4 @@ if __name__ == "__main__":
             for f in files:
                 os.remove(f)
     except KeyboardInterrupt:
-        sys.stdout = open(path + filename_txt, "w")
-        sys.stderr = sys.stdout
+        print("\n")

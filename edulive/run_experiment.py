@@ -2,6 +2,7 @@
 from SVD import SVD_Edulive
 import pandas as pd
 import numpy as np 
+from process_data import pre_process_data,map_data
 
 ###########################################################################################
 # path_file_train = (r"/home/truong/auto-recommender/movieslen_data/train.txt")
@@ -22,7 +23,7 @@ test['time_exam'] = pd.Series(time_exam_test,index=test.index)
 test['action_exam'] = pd.Series(action_exam_test,index=test.index)
 
 # algorithm = 'edulive' : chay thuat toan edulive
-# algorithm = 'edulive_average' :  chay thuat toan edulive_average    
+# algorithm = 'edulive_average' :  chay thuat toan edulive_average   
 svd_edulive = SVD_Edulive(lr=0.005, reg=0.0001, pen= 0.0001, n_features=3, n_epochs=20,  lambda1= 0.001, lambda2= 0.001, beta=0.001, alpha= 0.001)
 ############################################################################################
 
