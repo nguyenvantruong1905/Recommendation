@@ -67,7 +67,10 @@ def _run_epoch_baseline_implicit_timedependent(X, pu, qi, pu_a, qi_a, global_mea
         Learning rate.
     reg : float
         L2 regularization feature.
-
+    pen : float
+    lambda1 : float
+    lambda2 : float
+    
     Returns:
     --------
     pu : numpy.array
@@ -116,78 +119,6 @@ def _run_epoch_baseline_implicit_timedependent(X, pu, qi, pu_a, qi_a, global_mea
         qi[item] += lr * (err * (pu_a + (pu[user] +edulive_time)) - reg * qi[item])
     return pu, qi, pu_a, qi_a
 
-def _run_epoch_baseline_implicit(X, pu, qi, pu_a, qi_a, global_mean_, pen, lr, reg,  lambda1 , lambda2):
-
-    """Runs an epoch, updating model weights (pu_a, qi_a, pu, qi).
-
-    Parameters
-    ----------
-    X : numpy.array
-        Training set.
-    pu : numpy.array
-        User qiases vector.
-    qi : numpy.array
-        Item qiases vector.
-    pu_a : numpy.array
-        User latent features matrix.
-    qi_a : numpy.array
-        Item latent features matrix.
-    global_mean_ : float
-        Ratings arithmetic mean.
-    n_features : int
-        Number of latent features.
-    lr : float
-        Learning rate.
-    reg : float
-        L2 regularization feature.
-
-    Returns:
-    --------
-    pu : numpy.array
-        User qiases vector.
-    qi : numpy.array
-        Item qiases vector.
-    pu_a : numpy.array
-        User latent features matrix.
-    qi_a : numpy.array
-        Item latent features matrix.
-
-    j(0) = sima( r_{ui} - ( M  +  pu^T*qi_a  +  qi^T*pu_a   +   qi^T*pu ) ) + reg * ( ||qi||^2 + ||pu||^2 + ||pu_a||^2 + ||qi||^2 ) + pen * ( M - pu^T*qi )^2)
-    update params :
-    pu_a :=  pu_a - lr * ( (r_{ui} - ( M  +  pu^T*qi_a  +  qi^T*pu_a   +   qi^T*pu))*(-qi) ) + reg*(pu_a)  +  pen*(M - pu_a^T*qi_a)*(-qi_a)))
-    qi_a :=  qi_a - lr * ( (r_{ui} - ( M  +  pu^T*qi_a  +  qi^T*pu_a   +   qi^T*pu))*(-pu^T) + reg*(qi_a)  +  pen*(M - pu_a^T*qi_a)*(-pu_a)))
-    pu   :=  pu   - lr * ( (r_{ui} - ( M  +  pu^T*qi_a  +  qi^T*pu_a   +   qi^T*pu))*(-qi^T - qi) + reg*(pu))
-    qi   :=  qi   - lr * ( (r_{ui} - ( M  +  pu^T*qi_a  +  qi^T*pu_a   +   qi^T*pu))*(-pu^T - pu_a^T ) + reg*(qi))
-    """
-    n_shape = X.shape[0]
-    for i in range(n_shape):
-        user, item, rating, time_exam, action = int(X[i, 0]), int(X[i, 1]), X[i, 2], X[i,3], X[i,4]
-
-        pred = (
-            global_mean_
-            + (pu[user]).T @ (qi_a)
-            + qi[item].T @ (pu_a)
-            + qi[item].T @ (pu[user])
-            - lambda1*time_exam
-            - lambda2*action
-        )
-        err = rating - pred
-
-
-        pu_a += lr * (
-            err * (qi[item])
-            - reg * pu_a
-            - pen * (-qi_a) * (global_mean_ - pu_a.T @ qi_a)
-        )
-        qi_a += lr * (
-            err * ((pu[user]))
-            - reg * qi_a
-            - pen * (-pu_a) * (global_mean_ - pu_a.T @ qi_a)
-        )
-
-        pu[user] += lr * (err * (qi_a + qi[item]) - reg * pu[user])
-        qi[item] += lr * (err * (pu_a + (pu[user])) - reg * qi[item])
-    return pu, qi, pu_a, qi_a
 
     
 @jit
@@ -238,3 +169,4 @@ def _compute_val_metrics(X, pu, qi, pu_a, qi_a, global_mean_,  lambda1 , lambda2
     rmse = np.sqrt(loss)
     mae = np.absolute(residuals).mean()
     return loss, rmse, mae
+
